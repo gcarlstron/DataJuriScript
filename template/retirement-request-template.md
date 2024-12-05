@@ -15,21 +15,15 @@ Agência da Previdência Social
 Vem o(a) requerente postular [tipo_acao] com o reconhecimento de todos os períodos especiais ou comuns listados abaixo, com a conversão ou não, para que seja concedida a melhor aposentadoria, conforme escolha do requerente.
 
 ## Tabela dos períodos considerados no cálculo
-
-| Empresa | Cargo | Início | Fim | Tipo | Fator | Anos | Meses | Dias |
-|---------|--------|---------|------|-------|--------|-------|--------|-------|
-| [empresa_01] | [cargo_01] | [inicio_01] | [fim_01] | [tipo_01] | [fator_01] | [anos_01] | [meses_01] | [dias_01] |
-| [empresa_02] | [cargo_02] | [inicio_02] | [fim_02] | [tipo_02] | [fator_02] | [anos_02] | [meses_02] | [dias_02] |
-| [empresa_03] | [cargo_03] | [inicio_03] | [fim_03] | [tipo_03] | [fator_03] | [anos_03] | [meses_03] | [dias_03] |
-| [empresa_04] | [cargo_04] | [inicio_04] | [fim_04] | [tipo_04] | [fator_04] | [anos_04] | [meses_04] | [dias_04] |
-| [empresa_05] | [cargo_05] | [inicio_05] | [fim_05] | [tipo_05] | [fator_05] | [anos_05] | [meses_05] | [dias_05] |
-| [empresa_06] | [cargo_06] | [inicio_06] | [fim_06] | [tipo_06] | [fator_06] | [anos_06] | [meses_06] | [dias_06] |
-| [empresa_07] | [cargo_07] | [inicio_07] | [fim_07] | [tipo_07] | [fator_07] | [anos_07] | [meses_07] | [dias_07] |
-
 As atividades desenvolvidas pelo (a) requerente nos períodos trazidos abaixo são enquadradas como especiais pela exposição a agentes nocivos:
 
-| Empresa | Cargo | Início | Fim | Tipo | Prova |
-|---------|--------|---------|------|-------|--------|
+| Campo | Valor |
+|-------|-------|
+| **Período:** | De [data_inicio] a [data_fim] |
+| **Empresa:** | [empresa] |
+| **Função:** | [funcao] |
+| **Agentes nocivos:** | [agentes_nocivos] |
+| **Provas pré-constituídas:** | [provas] |
 
 Assim sendo, requer a concessão da [tipo_acao], visto que o(a) requerente completou o tempo mínimo necessário para a aposentação, atingindo o [tempo_total] mediante a soma de todos os períodos acima requeridos, com RMI no valor de [RMI].
 

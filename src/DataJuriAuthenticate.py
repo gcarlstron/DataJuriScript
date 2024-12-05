@@ -15,10 +15,10 @@ class DataJuriAuthenticate:
 
     def get_token(self) -> str:
         load_dotenv()
-        client = os.getenv('CLIENT')
-        secret = os.getenv('SECRET')
-        username = os.getenv('USERNAME')
-        password = os.getenv('PASSWORD')
+        client = os.getenv('DATA_JURI_CLIENT')
+        secret = os.getenv('DATA_JURI_SECRET')
+        username = os.getenv('DATA_JURI_USERNAME')
+        password = os.getenv('DATA_JURI_PASSWORD')
 
         payload = f'grant_type=password&username={username}&password={password}'
 

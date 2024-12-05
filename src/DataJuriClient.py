@@ -126,7 +126,7 @@ class DataJuriClient:
             "data_atual": datetime.now().strftime('%Y-%m-%d'),
             "advogado": {
                 "nome": processo_data.get('rows')[0]['advogadoCliente.nome'],
-                "oab": "Oab/rs 72.493"
+                "oab": 'rs 72.493'
             }
         }
 
