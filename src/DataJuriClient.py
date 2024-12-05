@@ -4,6 +4,7 @@ from datetime import datetime
 from typing import Dict, Any
 from urllib.parse import urlencode
 
+
 class DataJuriClient:
     def __init__(self, host: str, token: str):
         """
@@ -85,9 +86,14 @@ class DataJuriClient:
         # Busca dados do processo
         processo_data = self.get_processo(processo_id)
 
+        if int(processo_data.get('listSize')) < 1:
+            raise Exception(f'processo {processo_id} não encontrado')
         # Busca dados do cliente
-        client_id = processo_data['rows'][0]['clienteId']
+        client_id = processo_data.get('rows')[0]['clienteId']
         client_data = self.get_client(client_id)
+
+        if int(client_data.get('listSize')) < 1:
+            raise Exception(f'cliente {client_id} não encontrado')
 
         # Busca dados dos pedidos
         pedidos_data = self.get_pedidos_processo(processo_id)

@@ -1,16 +1,18 @@
 import json
+
+from src.DataJuriAuthenticate import DataJuriAuthenticate
 from src.DataJuriClient import DataJuriClient
 
 
 def main():
     # Configurações
     HOST = "api.datajuri.com.br"
-    TOKEN = input("Digite o token: ")
     PROCESSO_ID = input("Digite o numero do processo: ")
     
     try:
         # Inicializa o cliente
-        client = DataJuriClient(HOST, TOKEN)
+        authenticate = DataJuriAuthenticate(HOST)
+        client = DataJuriClient(HOST, authenticate.get_token())
         
         # Busca e preenche o template
         template = client.preencher_template(PROCESSO_ID)
@@ -24,7 +26,7 @@ def main():
         print(json.dumps(template, ensure_ascii=False, indent=2))
         
     except Exception as e:
-        print(f"Erro ao preencher template: {e}")
+        print(f"Erro: {e}")
 
 if __name__ == "__main__":
     main()
