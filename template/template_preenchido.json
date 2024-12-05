@@ -1,19 +1,53 @@
 {
-  "localidade_fase_atual": null,
+  "localidade_fase_atual": "São Paulo",
   "cliente": {
-    "nome": null,
-    "cpf": null,
-    "pis": null,
-    "data_nascimento": null,
-    "nome_mae": null
+    "nome": "Aparecida Suzuko Uemura",
+    "cpf": "147.292.938-19",
+    "pis": "",
+    "data_nascimento": "29/11/1972",
+    "nome_mae": ""
   },
-  "tipo_acao": null,
-  "periodos_especiais": [],
-  "tempo_total": null,
-  "rmi": null,
+  "tipo_acao": "Aposentadoria por Tempo de Contribuição (Regra de Transição #1: Pontos)",
+  "periodos_especiais": [
+    {
+      "data_inicio": "15/06/1997",
+      "data_final": "01/08/2000",
+      "empresa": "<a  href=\"#/lista/PessoaJuridica/12173\"  >Viação Aérea São Paulo S/A - VASP</a>",
+      "funcao": "Comissária de Bordo",
+      "agentes_nocivos": [
+        "Enquadramento profissional (cód. 2.4.1 do Decreto 53.831/64)",
+        " Ruído (cód. 2.0.1 Dec. 3.048/99)",
+        " Radiação ionizante (cód. 2.0.3 Dec. 3.048/99 e Grupo 1 LINACH)",
+        " Risco à integridade física (art. 57 Lei 8.213/91 c/c Súmula 198/TFR)",
+        " Vibrações (cód. 2.0.2 Dec. 3.048/99)",
+        " Penosidade (art. 57 Lei 8.213/91 c/c Súmula 198/TFR)",
+        ""
+      ],
+      "provas": null
+    },
+    {
+      "data_inicio": "07/10/1994",
+      "data_final": "13/05/1997",
+      "empresa": "<a  href=\"#/lista/PessoaJuridica/425504\"  >Skyjet Brasil Serviços Aeros S/A</a>",
+      "funcao": "Comissária de Bordo",
+      "agentes_nocivos": [
+        "Enquadramento profissional (cód. 2.4.1 do Decreto 53.831/64)",
+        " Pressão atmosférica (cód. 1.1.6 Dec. 83.080/79)",
+        " Ruído (cód. 2.0.1 Dec. 3.048/99)",
+        " Risco à integridade física (art. 57 Lei 8.213/91 c/c Súmula 198/TFR)",
+        " Radiação ionizante (cód. 2.0.3 Dec. 3.048/99 e Grupo 1 LINACH)",
+        " Vibrações (cód. 2.0.2 Dec. 3.048/99)",
+        " Penosidade (art. 57 Lei 8.213/91 c/c Súmula 198/TFR)",
+        ""
+      ],
+      "provas": null
+    }
+  ],
+  "tempo_total": "39 anos e 24 dias",
+  "rmi": "6.924,79",
   "data_atual": "2024-12-04",
   "advogado": {
-    "nome": null,
-    "oab": null
+    "nome": "Bruno Mesko Dias Advogados",
+    "oab": "Oab/rs 72.493"
   }
 }

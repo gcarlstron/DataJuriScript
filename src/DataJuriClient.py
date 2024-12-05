@@ -1,15 +1,14 @@
 import http.client
 import json
 from datetime import datetime
+from typing import Dict, Any
 from urllib.parse import urlencode
-from typing import Dict, Any, Optional
-
 
 class DataJuriClient:
     def __init__(self, host: str, token: str):
         """
         Inicializa o cliente com host e token
-        
+
         Args:
             host: Hostname da API (ex: 'api.datajuri.com.br')
             token: Token de autenticação
@@ -20,27 +19,27 @@ class DataJuriClient:
             'Authorization': f'Bearer {token}',
             'Content-Type': 'application/json'
         }
-    
+
     def _make_request(self, path: str, params: Dict[str, str]) -> Dict:
         """Faz uma requisição GET para a API"""
         conn = http.client.HTTPSConnection(self.host)
-        
+
         # Monta a query string
         query = urlencode(params)
         full_path = f"{path}?{query}"
-        
+
         try:
             conn.request('GET', full_path, headers=self.headers)
             response = conn.getresponse()
             data = response.read().decode()
-            
+
             if response.status != 200:
                 raise Exception(f"Erro na API: {response.status} - {data}")
-                
+
             return json.loads(data)
         finally:
             conn.close()
-    
+
     def get_processo(self, processo_id: str) -> Dict[str, Any]:
         """Busca dados do processo"""
         params = {
@@ -64,12 +63,12 @@ class DataJuriClient:
             'criterio': f'processo.id | igual a | {processo_id}'
         }
         return self._make_request('/v1/entidades/FaseProcesso', params)
-    
+
     def get_pedidos_processo(self, processo_id: str) -> Dict[str, Any]:
         """Busca dados dos pedidos do processo"""
         params = {
             'campos': 'data_inicio_pedido,data_final_pedido,empresa,funcao,agentes_nocivos,provas_aposentadoria',
-            'criterio': f'processo.id | igual a | {processo_id}'
+            'criterio': f'processoId | igual a | {processo_id}'
         }
         return self._make_request('/v1/entidades/PedidoProcesso', params)
 
@@ -89,12 +88,13 @@ class DataJuriClient:
         # Busca dados do cliente
         client_id = processo_data['rows'][0]['clienteId']
         client_data = self.get_client(client_id)
-        
+
         # Busca dados dos pedidos
         pedidos_data = self.get_pedidos_processo(processo_id)
 
         # Monta o template
         template = {
+            "ProcessoId": processo_id,
             "localidade_fase_atual": processo_data.get('rows')[0]['faseAtual.localidade'],
             "cliente": {
                 "nome": client_data.get('rows')[0]['nome'],
@@ -106,14 +106,14 @@ class DataJuriClient:
             "tipo_acao": processo_data.get('rows')[0]['tipoAcao'],
             "periodos_especiais": [
                 {
-                    "data_inicio": pedido['data_inicio_pedido'],
-                    "data_final": pedido['data_final_pedido'],
-                    "empresa": pedido['empresa'],
-                    "funcao": pedido['funcao'],
-                    "agentes_nocivos": pedido['agentes_nocivos'],
-                    "provas": pedido['provas_aposentadoria']
+                    "data_inicio": pedido.get('data_inicio_pedido'),
+                    "data_final": pedido.get('data_final_pedido'),
+                    "empresa": pedido.get('empresa'),
+                    "funcao": pedido.get('funcao'),
+                    "agentes_nocivos": [agente for agente in (pedido['agentes_nocivos'].split('<br/>'))],
+                    "provas": pedido.get('provas_aposentadoria')
                 }
-                for pedido in (pedidos_data.get('rows') if pedidos_data.get('rows') else [])
+                for pedido in (pedidos_data.get('rows', []))
             ],
             "tempo_total": processo_data.get('rows')[0]['tempo_total'],
             "rmi": processo_data.get('rows')[0]['rmi'],
@@ -123,34 +123,5 @@ class DataJuriClient:
                 "oab": "Oab/rs 72.493"
             }
         }
-        
+
         return template
-
-
-def main():
-    # Configurações
-    HOST = "api.datajuri.com.br"
-    TOKEN = input("Digite o token: ")
-    PROCESSO_ID = input("Digite o numero do processo")  # ID do processo que você quer buscar
-    
-    try:
-        # Inicializa o cliente
-        client = DataJuriClient(HOST, TOKEN)
-        
-        # Busca e preenche o template
-        template = client.preencher_template(PROCESSO_ID)
-        
-        # Salva o resultado em um arquivo
-        with open('../template/template_preenchido.json', 'w', encoding='utf-8') as f:
-            json.dump(template, f, ensure_ascii=False, indent=2)
-            
-        print("Template preenchido com sucesso!")
-        print("\nDados obtidos:")
-        print(json.dumps(template, ensure_ascii=False, indent=2))
-        
-    except Exception as e:
-        print(f"Erro ao preencher template: {e}")
-
-
-if __name__ == "__main__":
-    main()
