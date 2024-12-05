@@ -2,7 +2,6 @@ import http.client
 import json
 import os
 from base64 import b64encode
-from dotenv import load_dotenv
 
 def basic_auth(client: str, secret: str) -> str:
     token = b64encode(f"{client}:{secret}".encode('utf-8')).decode("ascii")
@@ -14,11 +13,10 @@ class DataJuriAuthenticate:
         self.host = host
 
     def get_token(self) -> str:
-        load_dotenv()
-        client = os.getenv('DATA_JURI_CLIENT')
-        secret = os.getenv('DATA_JURI_SECRET')
-        username = os.getenv('DATA_JURI_USERNAME')
-        password = os.getenv('DATA_JURI_PASSWORD')
+        client = os.getenv('DATA_JURI_SCRIPT:CLIENT')
+        secret = os.getenv('DATA_JURI_SCRIPT:SECRET')
+        username = os.getenv('DATA_JURI_SCRIPT:USERNAME')
+        password = os.getenv('DATA_JURI_SCRIPT:PASSWORD')
 
         payload = f'grant_type=password&username={username}&password={password}'
 

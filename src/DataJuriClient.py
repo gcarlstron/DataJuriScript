@@ -1,5 +1,6 @@
 import http.client
 import json
+import os
 from datetime import datetime
 from typing import Dict, Any
 from urllib.parse import urlencode
@@ -125,8 +126,8 @@ class DataJuriClient:
             "rmi": processo_data.get('rows')[0]['rmi'],
             "data_atual": datetime.now().strftime('%Y-%m-%d'),
             "advogado": {
-                "nome": processo_data.get('rows')[0]['advogadoCliente.nome'],
-                "oab": 'rs 72.493'
+                "nome": os.getenv('DATA_JURI_SCRIPT:ADVOGADO'),
+                "oab": os.getenv('DATA_JURI_SCRIPT:OAB')
             }
         }
 
