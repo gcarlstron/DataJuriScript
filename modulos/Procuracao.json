@@ -1,0 +1,118 @@
+[
+    {
+        "nome": "dataAlteracao",
+        "rotulo": "Data da última modificação (sistema)"
+    },
+    {
+        "nome": "criadoPor.nome",
+        "rotulo": "Criado por"
+    },
+    {
+        "nome": "valorHora",
+        "rotulo": "Valor da hora"
+    },
+    {
+        "nome": "motivoRevogacao",
+        "rotulo": "Motivo da revogação"
+    },
+    {
+        "nome": "partesStr",
+        "rotulo": "Lista de partes"
+    },
+    {
+        "nome": "dataRevogacao",
+        "rotulo": "Data de revogação"
+    },
+    {
+        "nome": "observacao",
+        "rotulo": "Observações"
+    },
+    {
+        "nome": "revogada",
+        "rotulo": "Revogada"
+    },
+    {
+        "nome": "observacaoRevogacao",
+        "rotulo": "Observações da revogação"
+    },
+    {
+        "nome": "dataInicioVigencia",
+        "rotulo": "Data do início da vigência"
+    },
+    {
+        "nome": "dataVencimento",
+        "rotulo": "Data de vencimento"
+    },
+    {
+        "nome": "proprietario.nome",
+        "rotulo": "Responsável"
+    },
+    {
+        "nome": "situacao",
+        "rotulo": "Situação"
+    },
+    {
+        "nome": "descricao",
+        "rotulo": "Descrição"
+    },
+    {
+        "nome": "tipoRenovacao",
+        "rotulo": "Tipo de renovação"
+    },
+    {
+        "nome": "poderes",
+        "rotulo": "Poderes"
+    },
+    {
+        "nome": "mesesPrazo",
+        "rotulo": "Prazo (meses)"
+    },
+    {
+        "nome": "tipo",
+        "rotulo": "Tipo de procuração"
+    },
+    {
+        "nome": "moedaValorHora",
+        "rotulo": "Moeda do valor da hora"
+    },
+    {
+        "nome": "dataAssinatura",
+        "rotulo": "Data de assinatura"
+    },
+    {
+        "nome": "numero",
+        "rotulo": "Número"
+    },
+    {
+        "nome": "localizacaoFisica",
+        "rotulo": "Localização física"
+    },
+    {
+        "nome": "dataRenovacao",
+        "rotulo": "Data de renovação"
+    },
+    {
+        "nome": "outorgante.nome",
+        "rotulo": "Outorgante"
+    },
+    {
+        "nome": "outorgado.nome",
+        "rotulo": "Outorgado"
+    },
+    {
+        "nome": "alteradoPor.nome",
+        "rotulo": "Alterado por"
+    },
+    {
+        "nome": "dataCadastro",
+        "rotulo": "Data de cadastro"
+    },
+    {
+        "nome": "linkRegistro",
+        "rotulo": "Link para Procuração"
+    },
+    {
+        "nome": "processo.pasta",
+        "rotulo": "Processo"
+    }
+]

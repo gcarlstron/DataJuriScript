@@ -1,0 +1,158 @@
+[
+    {
+        "nome": "indiceMonetarioId",
+        "rotulo": "Índice monetário"
+    },
+    {
+        "nome": "pessoa.nome",
+        "rotulo": "Pessoa"
+    },
+    {
+        "nome": "ordemServico.numero",
+        "rotulo": "Ordem de Serviço"
+    },
+    {
+        "nome": "alteradoPor.nome",
+        "rotulo": "Alterado por"
+    },
+    {
+        "nome": "tags",
+        "rotulo": "Tags"
+    },
+    {
+        "nome": "dataFinalJuros",
+        "rotulo": "Data final dos juros"
+    },
+    {
+        "nome": "campoValorAtualizadoId",
+        "rotulo": "Campo valor total atualizado para"
+    },
+    {
+        "nome": "percentualMulta",
+        "rotulo": "Percentual de multa padrão"
+    },
+    {
+        "nome": "desconsiderarNegativo",
+        "rotulo": "Desconsiderar a atualização quando o percentual total for negativo"
+    },
+    {
+        "nome": "valorAtualizadoRelativoa",
+        "rotulo": "Copiar valor total atualizado para (relativo)"
+    },
+    {
+        "nome": "percentualHonorarios",
+        "rotulo": "Percentual de honorários advocatícios"
+    },
+    {
+        "nome": "valorTotal",
+        "rotulo": "Valor total atualizado"
+    },
+    {
+        "nome": "contasReceberPagar.descricao",
+        "rotulo": "Contas a receber/pagar"
+    },
+    {
+        "nome": "valorTotalNominal",
+        "rotulo": "Valor total"
+    },
+    {
+        "nome": "tipoJuros",
+        "rotulo": "Tipo de juros"
+    },
+    {
+        "nome": "descricao",
+        "rotulo": "Descrição"
+    },
+    {
+        "nome": "contrato.numero",
+        "rotulo": "Contrato"
+    },
+    {
+        "nome": "multaValorAtualizado",
+        "rotulo": "Multa sobre valor atualizado"
+    },
+    {
+        "nome": "resumo",
+        "rotulo": "Resumo do cálculo"
+    },
+    {
+        "nome": "percentualJuros",
+        "rotulo": "Percentual de juros padrão"
+    },
+    {
+        "nome": "dataInicialJuros",
+        "rotulo": "Juros a partir de"
+    },
+    {
+        "nome": "dataFinal",
+        "rotulo": "Atualizar valores até"
+    },
+    {
+        "nome": "proRata",
+        "rotulo": "Pro-rata (juros)"
+    },
+    {
+        "nome": "periodicidadeJuros",
+        "rotulo": "Periodicidade juros"
+    },
+    {
+        "nome": "relativoa",
+        "rotulo": "Relativo a"
+    },
+    {
+        "nome": "processo.pasta",
+        "rotulo": "Processo"
+    },
+    {
+        "nome": "observacao",
+        "rotulo": "Observações"
+    },
+    {
+        "nome": "htmlListaParcelas",
+        "rotulo": "Lista de parcelas"
+    },
+    {
+        "nome": "valorTotalNominalPorExtenso",
+        "rotulo": "Valor total por extenso"
+    },
+    {
+        "nome": "desconsiderarNegativoMensal",
+        "rotulo": "Desconsiderar a atualização do MÊS quando o percentual mensal for negativo"
+    },
+    {
+        "nome": "jurosSobreValorInicial",
+        "rotulo": "Juros sobre valor inicial"
+    },
+    {
+        "nome": "linkRegistro",
+        "rotulo": "Link para Cálculo de atualização de valores"
+    },
+    {
+        "nome": "listaParcelas",
+        "rotulo": "Lista de parcelas personalizado"
+    },
+    {
+        "nome": "valorTotalPorExtenso",
+        "rotulo": "Valor total atualizado por extenso"
+    },
+    {
+        "nome": "honorarioSobreMulta",
+        "rotulo": "Considerar os honorários sobre o valor total com multa"
+    },
+    {
+        "nome": "criadoPor.nome",
+        "rotulo": "Criado por"
+    },
+    {
+        "nome": "dataAlteracao",
+        "rotulo": "Data da última modificação (sistema)"
+    },
+    {
+        "nome": "dataCadastro",
+        "rotulo": "Data de cadastro"
+    },
+    {
+        "nome": "multaSobreJuros",
+        "rotulo": "Multa sobre juros"
+    }
+]

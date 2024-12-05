@@ -1,0 +1,30 @@
+{
+  "cliente": {
+    "nome": "",
+    "cpf": "",
+    "pis": "",
+    "data_nascimento": "",
+    "nome_mae": ""
+  },
+  "requerimento": {
+    "tipo_acao": "",
+    "tempo_total": "",
+    "rmi": ""
+  },
+  "periodos_especiais": [
+    {
+      "data_inicio": "",
+      "data_fim": "",
+      "empresa": "",
+      "funcao": "",
+      "agentes_nocivos": "",
+      "provas": ""
+    }
+  ],
+  "documentos": {
+    "localidade": "",
+    "data_atual": "",
+    "advogado": "",
+    "oab": ""
+  }
+}

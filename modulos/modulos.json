@@ -1,0 +1,94 @@
+[
+    {
+        "nome": "Usuario",
+        "rotulo": "Usuário"
+    },
+    {
+        "nome": "RecorteConsulta",
+        "rotulo": "Recorte da Consulta de Terceiros"
+    },
+    {
+        "nome": "Procuracao",
+        "rotulo": "Procuração"
+    },
+    {
+        "nome": "Custas",
+        "rotulo": "Custas/Despesas"
+    },
+    {
+        "nome": "HoraTrabalhada",
+        "rotulo": "Horas trabalhadas"
+    },
+    {
+        "nome": "Movimento",
+        "rotulo": "Lançamento em Conta"
+    },
+    {
+        "nome": "FaseProcesso",
+        "rotulo": "Fase do processo"
+    },
+    {
+        "nome": "ContasPagar",
+        "rotulo": "Contas a pagar"
+    },
+    {
+        "nome": "Caso",
+        "rotulo": "Caso"
+    },
+    {
+        "nome": "OrdemServico",
+        "rotulo": "Ordem de serviço"
+    },
+    {
+        "nome": "Calculo",
+        "rotulo": "Cálculo de atualização de valores"
+    },
+    {
+        "nome": "Processo",
+        "rotulo": "Processo"
+    },
+    {
+        "nome": "PessoaJuridica",
+        "rotulo": "Pessoa Jurídica"
+    },
+    {
+        "nome": "PedidoProcesso",
+        "rotulo": "Pedidos/Objetos do processo"
+    },
+    {
+        "nome": "AndamentoFase",
+        "rotulo": "Andamento da fase"
+    },
+    {
+        "nome": "PessoaFisica",
+        "rotulo": "Pessoa Física"
+    },
+    {
+        "nome": "Tarefa",
+        "rotulo": "Tarefa"
+    },
+    {
+        "nome": "Atividade",
+        "rotulo": "Atividade"
+    },
+    {
+        "nome": "ContasReceber",
+        "rotulo": "Contas a receber"
+    },
+    {
+        "nome": "Compromisso",
+        "rotulo": "Compromisso"
+    },
+    {
+        "nome": "Pessoa",
+        "rotulo": "Pessoa"
+    },
+    {
+        "nome": "ContasReceberPagar",
+        "rotulo": "Contas a receber/pagar"
+    },
+    {
+        "nome": "Contrato",
+        "rotulo": "Contrato"
+    }
+]

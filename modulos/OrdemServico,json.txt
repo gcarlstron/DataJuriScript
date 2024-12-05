@@ -1,0 +1,170 @@
+[
+    {
+        "nome": "advogado.nome",
+        "rotulo": "Advogado responsável"
+    },
+    {
+        "nome": "dataCadastro",
+        "rotulo": "Data de cadastro"
+    },
+    {
+        "nome": "comentariosStr",
+        "rotulo": "Comentários"
+    },
+    {
+        "nome": "listaCustasStr",
+        "rotulo": "Lista de custas da Ordem de serviço"
+    },
+    {
+        "nome": "relativoa",
+        "rotulo": "Relativo a"
+    },
+    {
+        "nome": "tags",
+        "rotulo": "Tags"
+    },
+    {
+        "nome": "pessoa.nome",
+        "rotulo": "Pessoa"
+    },
+    {
+        "nome": "id",
+        "rotulo": "ID da Ordem de Serviço"
+    },
+    {
+        "nome": "regraNovoRegistroId",
+        "rotulo": "Regra novo registro"
+    },
+    {
+        "nome": "contrato.numero",
+        "rotulo": "Contrato"
+    },
+    {
+        "nome": "valor",
+        "rotulo": "Valor"
+    },
+    {
+        "nome": "contasReceberPagar.descricao",
+        "rotulo": "Contas a receber/pagar"
+    },
+    {
+        "nome": "adverso.nome",
+        "rotulo": "Adverso"
+    },
+    {
+        "nome": "moedaValorHora",
+        "rotulo": "Moeda do valor da hora"
+    },
+    {
+        "nome": "dataAlteracao",
+        "rotulo": "Data da última modificação (sistema)"
+    },
+    {
+        "nome": "linkRegistro",
+        "rotulo": "Link para Ordem de serviço"
+    },
+    {
+        "nome": "moedaValor",
+        "rotulo": "Moeda do valor"
+    },
+    {
+        "nome": "atividadesAbertasStr",
+        "rotulo": "Lista de atividades abertas"
+    },
+    {
+        "nome": "procuracao.numero",
+        "rotulo": "Procuração"
+    },
+    {
+        "nome": "marca.numeroProcesso",
+        "rotulo": "Marcas e patentes"
+    },
+    {
+        "nome": "caso.numeroCaso",
+        "rotulo": "Caso"
+    },
+    {
+        "nome": "particular",
+        "rotulo": "Particular"
+    },
+    {
+        "nome": "partesStr",
+        "rotulo": "Lista de partes"
+    },
+    {
+        "nome": "numero",
+        "rotulo": "Número"
+    },
+    {
+        "nome": "historicoAtividadesStr",
+        "rotulo": "Lista de histórico de atividades da Ordem de Serviço"
+    },
+    {
+        "nome": "dataUltimoAndamento",
+        "rotulo": "Data do último andamento"
+    },
+    {
+        "nome": "prioridade",
+        "rotulo": "Prioridade"
+    },
+    {
+        "nome": "assunto",
+        "rotulo": "Prioridade"
+    },
+    {
+        "nome": "criadoPor.nome",
+        "rotulo": "Criado por"
+    },
+    {
+        "nome": "grupoUsuarioId",
+        "rotulo": "Grupo responsável"
+    },
+    {
+        "nome": "valorHora",
+        "rotulo": "Valor da hora"
+    },
+    {
+        "nome": "dataAlteracaoUsuario",
+        "rotulo": "Data da última modificação"
+    },
+    {
+        "nome": "listaDocumentosStr",
+        "rotulo": "Lista de Documentos (GED)"
+    },
+    {
+        "nome": "listaUltimosAndamentosOrdemServicoStr",
+        "rotulo": "Últimos andamentos da Ordem de Serviço"
+    },
+    {
+        "nome": "alerta",
+        "rotulo": "Mensagem de alerta"
+    },
+    {
+        "nome": "processo.pasta",
+        "rotulo": "Processo"
+    },
+    {
+        "nome": "alteradoPor.nome",
+        "rotulo": "Alterado por"
+    },
+    {
+        "nome": "tipoServico",
+        "rotulo": "Tipo de serviço"
+    },
+    {
+        "nome": "observacao",
+        "rotulo": "Observações"
+    },
+    {
+        "nome": "situacao",
+        "rotulo": "Situação"
+    },
+    {
+        "nome": "emailNotificacaoemails",
+        "rotulo": "Emails de notificação"
+    },
+    {
+        "nome": "dataConclusao",
+        "rotulo": "Data de conclusão"
+    }
+]

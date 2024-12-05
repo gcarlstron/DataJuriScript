@@ -1,0 +1,197 @@
+{
+  "info": {
+    "_postman_id": "random-uuid",
+    "name": "DataJuri - Template Aposentadoria",
+    "description": "Requisições para preenchimento do template de aposentadoria",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Buscar Dados do Processo",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{host}}/v1/entidades/Processo?campos=tipoAcao,tempo_total,rmi&criterio=processoId | igual a | {{processo_id}}",
+          "host": ["{{host}}"],
+          "path": ["v1", "entidades", "Processo"],
+          "query": [
+            {
+              "key": "campos",
+              "value": "tipoAcao,tempo_total,rmi"
+            },
+            {
+              "key": "criterio",
+              "value": "processoId | igual a | {{processo_id}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Buscar Dados da Pessoa Física",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{host}}/v1/entidades/PessoaFisica?campos=nome,cpf,pis,dataNascimento,nomeMae&criterio=cpf | igual a | {{cpf}}",
+          "host": ["{{host}}"],
+          "path": ["v1", "entidades", "PessoaFisica"],
+          "query": [
+            {
+              "key": "campos",
+              "value": "nome,cpf,pis,dataNascimento,nomeMae"
+            },
+            {
+              "key": "criterio",
+              "value": "cpf | igual a | {{cpf}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Buscar Dados da Fase do Processo",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{host}}/v1/entidades/FaseProcesso?campos=faseAtual.localidade&criterio=processo.id | igual a | {{processo_id}}",
+          "host": ["{{host}}"],
+          "path": ["v1", "entidades", "FaseProcesso"],
+          "query": [
+            {
+              "key": "campos",
+              "value": "faseAtual.localidade"
+            },
+            {
+              "key": "criterio",
+              "value": "processo.id | igual a | {{processo_id}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Buscar Dados do Pedido do Processo",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{host}}/v1/entidades/PedidoProcesso?campos=data_inicio_pedido,data_final_pedido,empresa,funcao,agentes_nocivos,provas_aposentadoria&criterio=processo.id | igual a | {{processo_id}}",
+          "host": ["{{host}}"],
+          "path": ["v1", "entidades", "PedidoProcesso"],
+          "query": [
+            {
+              "key": "campos",
+              "value": "data_inicio_pedido,data_final_pedido,empresa,funcao,agentes_nocivos,provas_aposentadoria"
+            },
+            {
+              "key": "criterio",
+              "value": "processo.id | igual a | {{processo_id}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Buscar Dados do Usuário",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{host}}/v1/entidades/Usuario?campos=nome,nomeUsuario&criterio=id | igual a | {{usuario_id}}",
+          "host": ["{{host}}"],
+          "path": ["v1", "entidades", "Usuario"],
+          "query": [
+            {
+              "key": "campos",
+              "value": "nome,nomeUsuario"
+            },
+            {
+              "key": "criterio",
+              "value": "id | igual a | {{usuario_id}}"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "host",
+      "value": "https://api.datajuri.com.br"
+    },
+    {
+      "key": "token",
+      "value": "seu_token_aqui"
+    },
+    {
+      "key": "processo_id",
+      "value": "123456"
+    },
+    {
+      "key": "cpf",
+      "value": "12345678900"
+    },
+    {
+      "key": "usuario_id",
+      "value": "789"
+    }
+  ]
+}

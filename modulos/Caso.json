@@ -1,0 +1,174 @@
+[
+    {
+        "nome": "historicoAtividadesStr",
+        "rotulo": "Lista de histórico de atividades"
+    },
+    {
+        "nome": "dec",
+        "rotulo": "Decadente?"
+    },
+    {
+        "nome": "comentariosStr",
+        "rotulo": "Comentários"
+    },
+    {
+        "nome": "tags",
+        "rotulo": "Tags"
+    },
+    {
+        "nome": "contrato.numero",
+        "rotulo": "Contrato"
+    },
+    {
+        "nome": "grupoUsuarioId",
+        "rotulo": "Grupo responsável"
+    },
+    {
+        "nome": "alerta",
+        "rotulo": "Mensagem de alerta"
+    },
+    {
+        "nome": "dataAlteracaoUsuario",
+        "rotulo": "Última modificação"
+    },
+    {
+        "nome": "valorHora",
+        "rotulo": "Valor da hora"
+    },
+    {
+        "nome": "telefoneContato",
+        "rotulo": "Telefone do contato"
+    },
+    {
+        "nome": "emailContato",
+        "rotulo": "Email do contato"
+    },
+    {
+        "nome": "moedaValorHora",
+        "rotulo": "Moeda do valor da hora"
+    },
+    {
+        "nome": "numeroCaso",
+        "rotulo": "Número do caso"
+    },
+    {
+        "nome": "nomeContato",
+        "rotulo": "Nome do contato"
+    },
+    {
+        "nome": "processo.pasta",
+        "rotulo": "Processo"
+    },
+    {
+        "nome": "particular",
+        "rotulo": "Particular"
+    },
+    {
+        "nome": "prioridade",
+        "rotulo": "Prioridade"
+    },
+    {
+        "nome": "pessoa.nome",
+        "rotulo": "Pessoa do contato"
+    },
+    {
+        "nome": "usuario.nome",
+        "rotulo": "Usuário do contato"
+    },
+    {
+        "nome": "descricao",
+        "rotulo": "Descrição"
+    },
+    {
+        "nome": "comentarioInterno",
+        "rotulo": "Comentários internos"
+    },
+    {
+        "nome": "emailNotificacaoemails",
+        "rotulo": "Emails de notificação"
+    },
+    {
+        "nome": "atividadesAbertasStr",
+        "rotulo": "Lista de atividades abertas"
+    },
+    {
+        "nome": "getListaSolucaoCasoStr",
+        "rotulo": "Lista de Solução do Caso"
+    },
+    {
+        "nome": "dataFechamento",
+        "rotulo": "Data de fechamento"
+    },
+    {
+        "nome": "linkRegistro",
+        "rotulo": "Link para Caso"
+    },
+    {
+        "nome": "alteradoPor.nome",
+        "rotulo": "Alterado por"
+    },
+    {
+        "nome": "dataAlteracao",
+        "rotulo": "Data da última modificação (sistema)"
+    },
+    {
+        "nome": "proprietario.nome",
+        "rotulo": "Responsável"
+    },
+    {
+        "nome": "dataCadastro",
+        "rotulo": "Data de cadastro"
+    },
+    {
+        "nome": "criadoPor.nome",
+        "rotulo": "Criado por"
+    },
+    {
+        "nome": "contratad",
+        "rotulo": "Contratado?"
+    },
+    {
+        "nome": "pessoa.cliente",
+        "rotulo": "Cliente - Pessoa do contato"
+    },
+    {
+        "nome": "origem",
+        "rotulo": "Origem do caso"
+    },
+    {
+        "nome": "regraNovoRegistroId",
+        "rotulo": "Regra novo registro"
+    },
+    {
+        "nome": "situacao",
+        "rotulo": "Situação"
+    },
+    {
+        "nome": "moeda_comissao",
+        "rotulo": "Moeda Comissão"
+    },
+    {
+        "nome": "comissao",
+        "rotulo": "Comissão"
+    },
+    {
+        "nome": "tipo",
+        "rotulo": "Tipo"
+    },
+    {
+        "nome": "assunto",
+        "rotulo": "Assunto"
+    },
+    {
+        "nome": "area",
+        "rotulo": "Localização física"
+    },
+    {
+        "nome": "motivo",
+        "rotulo": "Empresa Atual"
+    },
+    {
+        "nome": "listaDocumentosStr",
+        "rotulo": "Lista de Documentos (GED)"
+    }
+]

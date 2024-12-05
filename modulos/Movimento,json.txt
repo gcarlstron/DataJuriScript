@@ -1,0 +1,254 @@
+[
+    {
+        "nome": "valor",
+        "rotulo": "Valor"
+    },
+    {
+        "nome": "contrato.numero",
+        "rotulo": "Contrato"
+    },
+    {
+        "nome": "centroCustoDividido",
+        "rotulo": "Centro de Custo dividido"
+    },
+    {
+        "nome": "alterarValorContas",
+        "rotulo": "Alterar as próximas contas em aberto para este valor"
+    },
+    {
+        "nome": "horaTrabalhada.tipo",
+        "rotulo": "Hora trabalhada"
+    },
+    {
+        "nome": "parcial",
+        "rotulo": "Parcial"
+    },
+    {
+        "nome": "planoContaDividido",
+        "rotulo": "Plano de Conta dividido"
+    },
+    {
+        "nome": "ultimoDocumentoContasReceberPagarStr",
+        "rotulo": "Último documento (GED) do contas a receber/pagar"
+    },
+    {
+        "nome": "particular",
+        "rotulo": "Particular"
+    },
+    {
+        "nome": "valorDesconto",
+        "rotulo": "Valor do desconto"
+    },
+    {
+        "nome": "dataAlteracaoUsuario",
+        "rotulo": "Data da última modificação"
+    },
+    {
+        "nome": "valorBruto",
+        "rotulo": "Valor bruto"
+    },
+    {
+        "nome": "caso.numeroCaso",
+        "rotulo": "Caso"
+    },
+    {
+        "nome": "boleto.contasReceberPagarId",
+        "rotulo": "Contas a receber/pagar do Boleto"
+    },
+    {
+        "nome": "vencimentoOriginal",
+        "rotulo": "Data de vencimento original do contas a receber/pagar"
+    },
+    {
+        "nome": "ordemServico.numero",
+        "rotulo": "Ordem de Serviço"
+    },
+    {
+        "nome": "contasReceberPagar.descricao",
+        "rotulo": "Contas a receber/pagar (descrição)"
+    },
+    {
+        "nome": "ultimoDocumentoMovimentoStr",
+        "rotulo": "Último documento (GED)"
+    },
+    {
+        "nome": "listaDocumentosStr",
+        "rotulo": "Lista de Documentos (GED)"
+    },
+    {
+        "nome": "notaFiscalServicoId",
+        "rotulo": "Nota Fiscal de serviço gerada"
+    },
+    {
+        "nome": "tags",
+        "rotulo": "Tags"
+    },
+    {
+        "nome": "dataCompetencia",
+        "rotulo": "Competência"
+    },
+    {
+        "nome": "formaPagamento",
+        "rotulo": "Forma de pagamento"
+    },
+    {
+        "nome": "faseProcesso.tipoFase",
+        "rotulo": "Fase do processo"
+    },
+    {
+        "nome": "transferirDe",
+        "rotulo": "Transferir de"
+    },
+    {
+        "nome": "custasId",
+        "rotulo": "Custas"
+    },
+    {
+        "nome": "cliente.nome",
+        "rotulo": "Cliente"
+    },
+    {
+        "nome": "lancaMovimentoCliente",
+        "rotulo": "Lançar este movimento na conta corrente do cliente"
+    },
+    {
+        "nome": "boletoId",
+        "rotulo": "Boleto"
+    },
+    {
+        "nome": "notaFiscal",
+        "rotulo": "Número da nota fiscal"
+    },
+    {
+        "nome": "gerarCustas",
+        "rotulo": "Gerar custas a partir deste lançamento associado ao cliente"
+    },
+    {
+        "nome": "valorPorExtenso",
+        "rotulo": "Valor por extenso"
+    },
+    {
+        "nome": "resumoProcesso",
+        "rotulo": "Resumo do processo"
+    },
+    {
+        "nome": "relativoa",
+        "rotulo": "Relativo a"
+    },
+    {
+        "nome": "marca.numeroProcesso",
+        "rotulo": "Marcas e patentes"
+    },
+    {
+        "nome": "centroCustoId",
+        "rotulo": "Centro de Custos"
+    },
+    {
+        "nome": "multa",
+        "rotulo": "Multa"
+    },
+    {
+        "nome": "valorOriginal",
+        "rotulo": "Valor original"
+    },
+    {
+        "nome": "data",
+        "rotulo": "Data"
+    },
+    {
+        "nome": "vencimento",
+        "rotulo": "Vencimento"
+    },
+    {
+        "nome": "juros",
+        "rotulo": "Juros"
+    },
+    {
+        "nome": "valorComSinal",
+        "rotulo": "Valor (com sinal)"
+    },
+    {
+        "nome": "contasReceberPagarId",
+        "rotulo": "Contas a Receber/Pagar"
+    },
+    {
+        "nome": "proprietario.nome",
+        "rotulo": "Responsável"
+    },
+    {
+        "nome": "contaFromId",
+        "rotulo": "Transferir para"
+    },
+    {
+        "nome": "pessoa.nome",
+        "rotulo": "Favorecido"
+    },
+    {
+        "nome": "planoConta.nomeCompleto",
+        "rotulo": "Plano de Conta"
+    },
+    {
+        "nome": "numeroCheque",
+        "rotulo": "Número do Cheque"
+    },
+    {
+        "nome": "dataAlteracao",
+        "rotulo": "Data da última modificação (sistema)"
+    },
+    {
+        "nome": "conciliado",
+        "rotulo": "Conciliado"
+    },
+    {
+        "nome": "grupoUsuarioId",
+        "rotulo": "Grupo responsável"
+    },
+    {
+        "nome": "tipo",
+        "rotulo": "Tipo"
+    },
+    {
+        "nome": "dataCadastro",
+        "rotulo": "Data de cadastro"
+    },
+    {
+        "nome": "alteradoPor.nome",
+        "rotulo": "Alterado por"
+    },
+    {
+        "nome": "linkRegistro",
+        "rotulo": "Link para Lançamento em Conta"
+    },
+    {
+        "nome": "criadoPor.nome",
+        "rotulo": "Criado por"
+    },
+    {
+        "nome": "processo.pasta",
+        "rotulo": "Processo"
+    },
+    {
+        "nome": "parcelaSerie",
+        "rotulo": "Parcela da série"
+    },
+    {
+        "nome": "contasReceberPagar.numeroVezes",
+        "rotulo": "Número de parcelas restantes do contas a receber/pagar"
+    },
+    {
+        "nome": "observacao",
+        "rotulo": "Observações"
+    },
+    {
+        "nome": "contaId",
+        "rotulo": "Conta"
+    },
+    {
+        "nome": "numero",
+        "rotulo": "Número do documento"
+    },
+    {
+        "nome": "descricao",
+        "rotulo": "Descrição"
+    }
+]

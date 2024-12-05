@@ -1,0 +1,122 @@
+[
+    {
+        "nome": "descricao",
+        "rotulo": "Descrição"
+    },
+    {
+        "nome": "observacao",
+        "rotulo": "Observações"
+    },
+    {
+        "nome": "data",
+        "rotulo": "Data"
+    },
+    {
+        "nome": "hora",
+        "rotulo": "Hora"
+    },
+    {
+        "nome": "parecer",
+        "rotulo": "Parecer"
+    },
+    {
+        "nome": "faseProcesso.processo.nomeGrupoEmpresarialCliente",
+        "rotulo": "Nome do Grupo Empresarial do cliente (derivado)"
+    },
+    {
+        "nome": "dataAlteracaoUsuario",
+        "rotulo": "Data da última modificação"
+    },
+    {
+        "nome": "tags",
+        "rotulo": "Tags"
+    },
+    {
+        "nome": "descricaoOriginal",
+        "rotulo": "Descrição capturada na consulta internet"
+    },
+    {
+        "nome": "listaDocumentosGoogleDriveStr",
+        "rotulo": "Lista de Documentos do Google Drive"
+    },
+    {
+        "nome": "faseProcesso.processo.adverso.nome",
+        "rotulo": "Nome do adverso do processo"
+    },
+    {
+        "nome": "faseProcesso.processo.proprietario.nome",
+        "rotulo": "Responsável do processo"
+    },
+    {
+        "nome": "dataParecerRevisado",
+        "rotulo": "Data do parecer revisado"
+    },
+    {
+        "nome": "observacaoOriginal",
+        "rotulo": "Observações capturada na consulta internet"
+    },
+    {
+        "nome": "parecerRevisado",
+        "rotulo": "Parecer revisado"
+    },
+    {
+        "nome": "conferencia",
+        "rotulo": "Conferência"
+    },
+    {
+        "nome": "faseProcessoId",
+        "rotulo": "Fase"
+    },
+    {
+        "nome": "criadoPor.nome",
+        "rotulo": "Criado por"
+    },
+    {
+        "nome": "linkRegistro",
+        "rotulo": "Link para Andamento da fase"
+    },
+    {
+        "nome": "dataCadastro",
+        "rotulo": "Data de cadastro"
+    },
+    {
+        "nome": "dataAlteracao",
+        "rotulo": "Data da última modificação (sistema)"
+    },
+    {
+        "nome": "privado",
+        "rotulo": "Privado"
+    },
+    {
+        "nome": "faseProcesso.processo.cliente.nome",
+        "rotulo": "Nome do cliente do processo"
+    },
+    {
+        "nome": "parecerRevisadoPor.nome",
+        "rotulo": "Parecer revisado por"
+    },
+    {
+        "nome": "listaDocumentos",
+        "rotulo": "Lista de documentos (links)"
+    },
+    {
+        "nome": "origem",
+        "rotulo": "Origem"
+    },
+    {
+        "nome": "dataHora",
+        "rotulo": "Data/Hora"
+    },
+    {
+        "nome": "faseProcesso.processo.pasta",
+        "rotulo": "Processo"
+    },
+    {
+        "nome": "alteradoPor.nome",
+        "rotulo": "Alterado por"
+    },
+    {
+        "nome": "observacaoRecorteConsulta",
+        "rotulo": "Observação do Recorte da Consulta"
+    }
+]

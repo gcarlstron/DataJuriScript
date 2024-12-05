@@ -1,0 +1,454 @@
+[
+    {
+        "nome": "pessoa.nome",
+        "rotulo": "Favorecido"
+    },
+    {
+        "nome": "numeroDocumento",
+        "rotulo": "Número do Documento"
+    },
+    {
+        "nome": "termina",
+        "rotulo": "Este lançamento termina de acordo com a configuração a seguir"
+    },
+    {
+        "nome": "dataAlteracao",
+        "rotulo": "Data da última modificação (sistema)"
+    },
+    {
+        "nome": "vincularTotalHoras",
+        "rotulo": "Calcular valor pelo total das horas trabalhadas"
+    },
+    {
+        "nome": "tipo",
+        "rotulo": "Tipo"
+    },
+    {
+        "nome": "planoContaDividido",
+        "rotulo": "Plano de Conta dividido"
+    },
+    {
+        "nome": "dataCadastro",
+        "rotulo": "Data de cadastro"
+    },
+    {
+        "nome": "horas",
+        "rotulo": "Horas IDS"
+    },
+    {
+        "nome": "recorrente",
+        "rotulo": "Série recorrente"
+    },
+    {
+        "nome": "tags",
+        "rotulo": "Tags"
+    },
+    {
+        "nome": "valorDesconto",
+        "rotulo": "Valor do desconto"
+    },
+    {
+        "nome": "formaPagamento",
+        "rotulo": "Forma de pagamento"
+    },
+    {
+        "nome": "caso.numeroCaso",
+        "rotulo": "Caso"
+    },
+    {
+        "nome": "contrato.numero",
+        "rotulo": "Contrato"
+    },
+    {
+        "nome": "marca.numeroProcesso",
+        "rotulo": "Marcas e patentes"
+    },
+    {
+        "nome": "faseProcesso.tipoFase",
+        "rotulo": "Fase do processo"
+    },
+    {
+        "nome": "relativoa",
+        "rotulo": "Relativo a"
+    },
+    {
+        "nome": "dataVencimento",
+        "rotulo": "Próximo vencimento"
+    },
+    {
+        "nome": "cliente.nome",
+        "rotulo": "Cliente"
+    },
+    {
+        "nome": "mensalDiaSemana",
+        "rotulo": "Mensal dia semana"
+    },
+    {
+        "nome": "linkRegistro",
+        "rotulo": "Link para Contas a receber/pagar"
+    },
+    {
+        "nome": "alteradoPor.nome",
+        "rotulo": "Alterado por"
+    },
+    {
+        "nome": "criadoPor.nome",
+        "rotulo": "Criado por"
+    },
+    {
+        "nome": "mensagemRecorrente",
+        "rotulo": "Descrição da recorrência"
+    },
+    {
+        "nome": "mensalEm",
+        "rotulo": "Mensal em"
+    },
+    {
+        "nome": "ordemServicos",
+        "rotulo": "Ordem de Serviços IDS"
+    },
+    {
+        "nome": "comentariosStr",
+        "rotulo": "Comentários"
+    },
+    {
+        "nome": "gerarCustas",
+        "rotulo": "Gerar custas a partir deste lançamento associado ao cliente"
+    },
+    {
+        "nome": "dataAlteracaoUsuario",
+        "rotulo": "Data da última modificação"
+    },
+    {
+        "nome": "historicoAtividadesStr",
+        "rotulo": "Lista de histórico de atividades da pessoa"
+    },
+    {
+        "nome": "parcela",
+        "rotulo": "Parcela da série"
+    },
+    {
+        "nome": "valorComSinal",
+        "rotulo": "Valor (com sinal)"
+    },
+    {
+        "nome": "horasTrabalhadasStr",
+        "rotulo": "Lista de horas trabalhadas"
+    },
+    {
+        "nome": "centroCustoDividido",
+        "rotulo": "Centro de Custo dividido"
+    },
+    {
+        "nome": "listaParcelas",
+        "rotulo": "Lista de parcelas de cálculo"
+    },
+    {
+        "nome": "ultimaNotaFiscalServicoId",
+        "rotulo": "Última Nota Fiscal de serviço gerada"
+    },
+    {
+        "nome": "listaDocumentosStr",
+        "rotulo": "Lista de Documentos (GED)"
+    },
+    {
+        "nome": "listaDocumentosPessoaStr",
+        "rotulo": "Lista de Documentos da Pessoa (GED)"
+    },
+    {
+        "nome": "ultimoDocumentoPessoaStr",
+        "rotulo": "Último documento da Pessoa (GED)"
+    },
+    {
+        "nome": "custas",
+        "rotulo": "Custas IDS"
+    },
+    {
+        "nome": "dataVencimentoMesAnoStr",
+        "rotulo": "Mês/ano do vencimento"
+    },
+    {
+        "nome": "dataCompetencia",
+        "rotulo": "Competência"
+    },
+    {
+        "nome": "movimentosStr",
+        "rotulo": "Lista de lançamentos"
+    },
+    {
+        "nome": "valorPorExtenso",
+        "rotulo": "Valor por extenso"
+    },
+    {
+        "nome": "notasStr",
+        "rotulo": "Lista de Notas"
+    },
+    {
+        "nome": "ultimoDocumentoContasReceberPagarStr",
+        "rotulo": "Último documento (GED)"
+    },
+    {
+        "nome": "frequenciaInicio",
+        "rotulo": "Data do início da série"
+    },
+    {
+        "nome": "frequenciaFim",
+        "rotulo": "Data do término da série"
+    },
+    {
+        "nome": "mensalTipo",
+        "rotulo": "Mensal tipo"
+    },
+    {
+        "nome": "anualTipo",
+        "rotulo": "Anual Tipo"
+    },
+    {
+        "nome": "anualEmMes",
+        "rotulo": "Anual em Mês"
+    },
+    {
+        "nome": "anualEm",
+        "rotulo": "Anual em"
+    },
+    {
+        "nome": "custaId",
+        "rotulo": "Custas"
+    },
+    {
+        "nome": "semanalDias",
+        "rotulo": "Dias da semana"
+    },
+    {
+        "nome": "listaUltimosEmails",
+        "rotulo": "Últimos emails enviados"
+    },
+    {
+        "nome": "frequenciaLabel",
+        "rotulo": "Label da Frequência"
+    },
+    {
+        "nome": "listaAnexoStr",
+        "rotulo": "Lista de Documentos DataJuri e Notas"
+    },
+    {
+        "nome": "custasNaoPagasStr",
+        "rotulo": "Lista de custas não pagas"
+    },
+    {
+        "nome": "custasStr",
+        "rotulo": "Lista de custas"
+    },
+    {
+        "nome": "valorReajustado",
+        "rotulo": "Valor reajustado"
+    },
+    {
+        "nome": "numeroCheque",
+        "rotulo": "Número do cheque"
+    },
+    {
+        "nome": "lancaMovimentoCliente",
+        "rotulo": "Lançar este movimento na conta corrente do cliente"
+    },
+    {
+        "nome": "custasPagasStr",
+        "rotulo": "Lista de custas pagas"
+    },
+    {
+        "nome": "valorBruto",
+        "rotulo": "Valor bruto"
+    },
+    {
+        "nome": "notaFiscal",
+        "rotulo": "Número da nota fiscal"
+    },
+    {
+        "nome": "percentualMulta",
+        "rotulo": "Percentual de multa por atraso"
+    },
+    {
+        "nome": "diasMulta",
+        "rotulo": "Cobrar multa após (dias)"
+    },
+    {
+        "nome": "valorAtualizadoComJuros",
+        "rotulo": "Valor total com multa/juros"
+    },
+    {
+        "nome": "vincularTotalCustas",
+        "rotulo": "Calcular valor pelo total das custas"
+    },
+    {
+        "nome": "naoIncluirPrevisaoFluxo",
+        "rotulo": "Não considerar na previsão de fluxo"
+    },
+    {
+        "nome": "ultimoBoletoStr",
+        "rotulo": "Último boleto em aberto"
+    },
+    {
+        "nome": "resumoProcesso",
+        "rotulo": "Resumo do processo"
+    },
+    {
+        "nome": "horaTrabalhada.tipo",
+        "rotulo": "Hora trabalhada"
+    },
+    {
+        "nome": "tipoJuros",
+        "rotulo": "Juros"
+    },
+    {
+        "nome": "status",
+        "rotulo": "Status"
+    },
+    {
+        "nome": "valorJuros",
+        "rotulo": "Valor de juros"
+    },
+    {
+        "nome": "tipoDocumento",
+        "rotulo": "Tipo de documento"
+    },
+    {
+        "nome": "contaId",
+        "rotulo": "Conta"
+    },
+    {
+        "nome": "valor",
+        "rotulo": "Valor"
+    },
+    {
+        "nome": "proprietario.nome",
+        "rotulo": "Responsável"
+    },
+    {
+        "nome": "valorEstimado",
+        "rotulo": "Valor estimado"
+    },
+    {
+        "nome": "percentualJuros",
+        "rotulo": "Percentual de Juros"
+    },
+    {
+        "nome": "valorMulta",
+        "rotulo": "Valor da multa por atraso"
+    },
+    {
+        "nome": "ultimoVencimento",
+        "rotulo": "Último vencimento"
+    },
+    {
+        "nome": "cobrarJurosApos",
+        "rotulo": "Cobrar juros após"
+    },
+    {
+        "nome": "codigoBarras",
+        "rotulo": "Código de Barras"
+    },
+    {
+        "nome": "portador",
+        "rotulo": "Portador"
+    },
+    {
+        "nome": "dataEmissao",
+        "rotulo": "Emissão"
+    },
+    {
+        "nome": "prazo",
+        "rotulo": "Dias para vencimento"
+    },
+    {
+        "nome": "observacao",
+        "rotulo": "Observações"
+    },
+    {
+        "nome": "regraNovoRegistroId",
+        "rotulo": "Regra novo registro"
+    },
+    {
+        "nome": "anualNoMes",
+        "rotulo": "Anual no mes"
+    },
+    {
+        "nome": "frequenciaResponsive",
+        "rotulo": "Frequência personalizada"
+    },
+    {
+        "nome": "numeroVezesSerie",
+        "rotulo": "Número de parcelas da série"
+    },
+    {
+        "nome": "semDataTermino",
+        "rotulo": "Sem data de término"
+    },
+    {
+        "nome": "tipoSerieRecorrente",
+        "rotulo": "Tipo de série recorrente"
+    },
+    {
+        "nome": "frequenciaSerieRegistro",
+        "rotulo": "Frequência da Série"
+    },
+    {
+        "nome": "anualDiaSemana",
+        "rotulo": "AnualDiaSemana"
+    },
+    {
+        "nome": "novoLembrete",
+        "rotulo": "Utilizar lembretes múltiplos"
+    },
+    {
+        "nome": "grupoUsuarioId",
+        "rotulo": "Grupo responsável"
+    },
+    {
+        "nome": "numeroVezes",
+        "rotulo": "Número de parcelas restantes"
+    },
+    {
+        "nome": "mensalNoDia",
+        "rotulo": "Mensal do dia"
+    },
+    {
+        "nome": "anualNoDia",
+        "rotulo": "Anual no dia"
+    },
+    {
+        "nome": "diasPrazo",
+        "rotulo": "Dias de Prazo"
+    },
+    {
+        "nome": "vincularTotalOrdemServicos",
+        "rotulo": "Calcular valor pelo total das ordem de serviços"
+    },
+    {
+        "nome": "descricao",
+        "rotulo": "Descrição"
+    },
+    {
+        "nome": "processo.pasta",
+        "rotulo": "Processo"
+    },
+    {
+        "nome": "centroCustoId",
+        "rotulo": "Centro de Custo"
+    },
+    {
+        "nome": "frequencia",
+        "rotulo": "Frequência"
+    },
+    {
+        "nome": "ordemServico.numero",
+        "rotulo": "Ordem de Serviço"
+    },
+    {
+        "nome": "planoConta.nomeCompleto",
+        "rotulo": "Plano de Conta"
+    },
+    {
+        "nome": "particular",
+        "rotulo": "Particular"
+    }
+]

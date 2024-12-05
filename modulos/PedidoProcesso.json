@@ -1,0 +1,126 @@
+[
+    {
+        "nome": "linkRegistro",
+        "rotulo": "Link para Pedidos/Objetos do processo"
+    },
+    {
+        "nome": "dataAlteracaoUsuario",
+        "rotulo": "Data da última modificação"
+    },
+    {
+        "nome": "possibilidadeGanho",
+        "rotulo": "Possibilidade de ganho"
+    },
+    {
+        "nome": "observacao",
+        "rotulo": "Observações"
+    },
+    {
+        "nome": "dataAlteracao",
+        "rotulo": "Data da última modificação (sistema)"
+    },
+    {
+        "nome": "alteradoPor.nome",
+        "rotulo": "Alterado por"
+    },
+    {
+        "nome": "dataCadastro",
+        "rotulo": "Data de cadastro"
+    },
+    {
+        "nome": "criadoPor.nome",
+        "rotulo": "Criado por"
+    },
+    {
+        "nome": "moedaValorProvisionado",
+        "rotulo": "Moeda do valor provisionado"
+    },
+    {
+        "nome": "valorProvisionado",
+        "rotulo": "Valor provisionado"
+    },
+    {
+        "nome": "valorAceito",
+        "rotulo": "Valor aceito"
+    },
+    {
+        "nome": "moedaValorAceito",
+        "rotulo": "Moeda do valor aceito"
+    },
+    {
+        "nome": "moedaValorPedido",
+        "rotulo": "Moeda do valor pedido"
+    },
+    {
+        "nome": "principal",
+        "rotulo": "Pedido principal do processo"
+    },
+    {
+        "nome": "valorPedido",
+        "rotulo": "Valor pedido"
+    },
+    {
+        "nome": "data",
+        "rotulo": "Data"
+    },
+    {
+        "nome": "faseProcessoId",
+        "rotulo": "Fase do processo"
+    },
+    {
+        "nome": "empresa",
+        "rotulo": "empresa"
+    },
+    {
+        "nome": "data_inicio_pedido",
+        "rotulo": "data_inicio_pedido"
+    },
+    {
+        "nome": "data_de_distribuicao",
+        "rotulo": "Data de Distribuição"
+    },
+    {
+        "nome": "dataLimiteDecisao",
+        "rotulo": "Data limite para decisão"
+    },
+    {
+        "nome": "finalizado",
+        "rotulo": "Finalizado"
+    },
+    {
+        "nome": "processo.adverso.nome",
+        "rotulo": "Adverso - Processo"
+    },
+    {
+        "nome": "data_final_pedido",
+        "rotulo": "data_final_pedido"
+    },
+    {
+        "nome": "situacao",
+        "rotulo": "Situação"
+    },
+    {
+        "nome": "provas_01",
+        "rotulo": "provas_aposentadoria_01"
+    },
+    {
+        "nome": "processo.pasta",
+        "rotulo": "Processo"
+    },
+    {
+        "nome": "funcao",
+        "rotulo": "Função"
+    },
+    {
+        "nome": "provas",
+        "rotulo": "provas_aposentadoria"
+    },
+    {
+        "nome": "nomeObjeto",
+        "rotulo": "Objetos"
+    },
+    {
+        "nome": "agentes_nocivos",
+        "rotulo": "Agentes Nocivos"
+    }
+]

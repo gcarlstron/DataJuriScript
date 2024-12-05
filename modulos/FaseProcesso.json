@@ -1,0 +1,270 @@
+[
+    {
+        "nome": "proprietario.nome",
+        "rotulo": "Responsável"
+    },
+    {
+        "nome": "valor_provisionado",
+        "rotulo": "Valor Provisionado"
+    },
+    {
+        "nome": "data_provisionada",
+        "rotulo": "Data Recebimento Provisionado"
+    },
+    {
+        "nome": "moeda_valor_provisionado",
+        "rotulo": "Moeda Valor Provisionado"
+    },
+    {
+        "nome": "criadoPor.nome",
+        "rotulo": "Criado por"
+    },
+    {
+        "nome": "vara",
+        "rotulo": "Vara"
+    },
+    {
+        "nome": "processo.nomeGrupoEmpresarialCliente",
+        "rotulo": "Nome do Grupo Empresarial do cliente (derivado)"
+    },
+    {
+        "nome": "dataDecisao",
+        "rotulo": "Data da decisão"
+    },
+    {
+        "nome": "valorSentenca",
+        "rotulo": "Valor da sentença"
+    },
+    {
+        "nome": "notificarNovaFase",
+        "rotulo": "Notificar quando criar nova fase"
+    },
+    {
+        "nome": "listaAndamentosParecerStr",
+        "rotulo": "Andamentos somente com parecer"
+    },
+    {
+        "nome": "diasFaseAtiva",
+        "rotulo": "Número de dias da fase no processo"
+    },
+    {
+        "nome": "numero",
+        "rotulo": "Nº da Fase do Processo"
+    },
+    {
+        "nome": "tipoFase",
+        "rotulo": "Tipo de Fase"
+    },
+    {
+        "nome": "alteradoPor.nome",
+        "rotulo": "Alterado por"
+    },
+    {
+        "nome": "dataAlteracao",
+        "rotulo": "Data da última modificação (sistema)"
+    },
+    {
+        "nome": "listaUltimosAndamentosParecerRevisadoStr",
+        "rotulo": "Últimos andamentos do fase do processo (somente parecer revisado)"
+    },
+    {
+        "nome": "processo.tags",
+        "rotulo": "Tags do processo"
+    },
+    {
+        "nome": "listaUltimosAndamentosManualStr",
+        "rotulo": "Últimos andamentos do fase do processo (somente cadastro manual)"
+    },
+    {
+        "nome": "tags",
+        "rotulo": "Tags"
+    },
+    {
+        "nome": "processo.cliente.nome",
+        "rotulo": "Nome do cliente (novo)"
+    },
+    {
+        "nome": "instancia",
+        "rotulo": "Instância"
+    },
+    {
+        "nome": "totalAndamentosByFase",
+        "rotulo": "Total de andamentos"
+    },
+    {
+        "nome": "listaDocumentosGoogleDriveStr",
+        "rotulo": "Lista de Documentos do Google Drive"
+    },
+    {
+        "nome": "dataUltimoAndamento",
+        "rotulo": "Data do último andamento da fase"
+    },
+    {
+        "nome": "dataAlteracaoUsuario",
+        "rotulo": "Data da última modificação"
+    },
+    {
+        "nome": "decisoesStr",
+        "rotulo": "Decisões da fase"
+    },
+    {
+        "nome": "forum",
+        "rotulo": "Fórum"
+    },
+    {
+        "nome": "emailsNotificarNovaFase",
+        "rotulo": "Emails para notificar"
+    },
+    {
+        "nome": "numeroVara",
+        "rotulo": "Número da vara"
+    },
+    {
+        "nome": "andamentosStr",
+        "rotulo": "Lista de andamentos"
+    },
+    {
+        "nome": "processo.adverso.nome",
+        "rotulo": "Nome do adverso (processo)"
+    },
+    {
+        "nome": "faseAtual",
+        "rotulo": "Fase Atual"
+    },
+    {
+        "nome": "data",
+        "rotulo": "Data"
+    },
+    {
+        "nome": "listaUltimosAndamentosComDescObsParecerStr",
+        "rotulo": "Últimos andamentos do processo com descrição, observações e parecer"
+    },
+    {
+        "nome": "estado",
+        "rotulo": "Estado"
+    },
+    {
+        "nome": "linkRegistro",
+        "rotulo": "Link para Fase do processo"
+    },
+    {
+        "nome": "dataCadastro",
+        "rotulo": "Data de cadastro"
+    },
+    {
+        "nome": "nomeCliente",
+        "rotulo": "Nome do cliente (processo)"
+    },
+    {
+        "nome": "recebido",
+        "rotulo": "Recebido?"
+    },
+    {
+        "nome": "observacaoNotificarNovaFase",
+        "rotulo": "Observações do email"
+    },
+    {
+        "nome": "disponibilidade_para",
+        "rotulo": "Disponibilidade para Saque"
+    },
+    {
+        "nome": "valor_re",
+        "rotulo": "Valor Recebido"
+    },
+    {
+        "nome": "moeda_valor_re",
+        "rotulo": "Moeda Valor Recebido"
+    },
+    {
+        "nome": "ca",
+        "rotulo": "Cálculo Homologado?"
+    },
+    {
+        "nome": "impugnacao_ao_calcul",
+        "rotulo": "Impugnação ao Cálculo?"
+    },
+    {
+        "nome": "orgaoId",
+        "rotulo": "Órgão Judicial"
+    },
+    {
+        "nome": "tr",
+        "rotulo": "Trânsito em Julgado"
+    },
+    {
+        "nome": "todos_pedidos",
+        "rotulo": "Todos Pedidos Analisados"
+    },
+    {
+        "nome": "der_reafirmada",
+        "rotulo": "DER reafirmada"
+    },
+    {
+        "nome": "observacao",
+        "rotulo": "Observações"
+    },
+    {
+        "nome": "cabem_embarg",
+        "rotulo": "Cabem Embargos?"
+    },
+    {
+        "nome": "cabe_recurso",
+        "rotulo": "Cabe Recurso?"
+    },
+    {
+        "nome": "processo.pasta",
+        "rotulo": "Processo"
+    },
+    {
+        "nome": "localidade",
+        "rotulo": "Localidade"
+    },
+    {
+        "nome": "decisao",
+        "rotulo": "Decisão"
+    },
+    {
+        "nome": "numeroOrdem",
+        "rotulo": "Número da Requisição"
+    },
+    {
+        "nome": "comentariosStr",
+        "rotulo": "Comentários"
+    },
+    {
+        "nome": "parecer_sentenca_acordao",
+        "rotulo": "Parecer Sentença/Acórdão"
+    },
+    {
+        "nome": "parecer_emb",
+        "rotulo": "Parecer Embargos"
+    },
+    {
+        "nome": "parecer_sentenca_acordao_ed",
+        "rotulo": "Parecer Sentença/Acórdão ED"
+    },
+    {
+        "nome": "parecer_recurso",
+        "rotulo": "Parecer Recurso"
+    },
+    {
+        "nome": "dataexped",
+        "rotulo": "Data Expedição Requisição"
+    },
+    {
+        "nome": "recebido",
+        "rotulo": "Recebido?"
+    },
+    {
+        "nome": "moedaValorSentenca",
+        "rotulo": "Moeda do valor da sentença"
+    },
+    {
+        "nome": "jui",
+        "rotulo": "Juiz"
+    },
+    {
+        "nome": "sentenca",
+        "rotulo": "Sentença"
+    }
+]

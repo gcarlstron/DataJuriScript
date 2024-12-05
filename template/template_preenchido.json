@@ -1,0 +1,19 @@
+{
+  "localidade_fase_atual": null,
+  "cliente": {
+    "nome": null,
+    "cpf": null,
+    "pis": null,
+    "data_nascimento": null,
+    "nome_mae": null
+  },
+  "tipo_acao": null,
+  "periodos_especiais": [],
+  "tempo_total": null,
+  "rmi": null,
+  "data_atual": "2024-12-04",
+  "advogado": {
+    "nome": null,
+    "oab": null
+  }
+}

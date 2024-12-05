@@ -1,0 +1,522 @@
+[
+    {
+        "nome": "dataPrazoFatal",
+        "rotulo": "Data do prazo fatal"
+    },
+    {
+        "nome": "moedaValorHora",
+        "rotulo": "Moeda do valor da hora"
+    },
+    {
+        "nome": "dataCancelamento",
+        "rotulo": "Data de cancelamento"
+    },
+    {
+        "nome": "listaLembretesSimplesStr",
+        "rotulo": "Lista de Lembretes"
+    },
+    {
+        "nome": "pontua",
+        "rotulo": "Pontua"
+    },
+    {
+        "nome": "dataConclusao",
+        "rotulo": "Data de conclusão"
+    },
+    {
+        "nome": "codigoAtividade",
+        "rotulo": "Código da atividade"
+    },
+    {
+        "nome": "listaSubAtividadeStr",
+        "rotulo": "Lista de Sub-Atividades"
+    },
+    {
+        "nome": "processo.faseAtual.tipoFase",
+        "rotulo": "Tipo da fase atual do processo"
+    },
+    {
+        "nome": "comentariosStr",
+        "rotulo": "Comentários"
+    },
+    {
+        "nome": "regraNovoRegistroId",
+        "rotulo": "Regra novo registro"
+    },
+    {
+        "nome": "contrato.numero",
+        "rotulo": "Contrato"
+    },
+    {
+        "nome": "relativoa",
+        "rotulo": "Relativo a"
+    },
+    {
+        "nome": "convidadosStr",
+        "rotulo": "Convidados"
+    },
+    {
+        "nome": "dataCadastro",
+        "rotulo": "Data de cadastro"
+    },
+    {
+        "nome": "andamentoFaseId",
+        "rotulo": "Andamento da fase"
+    },
+    {
+        "nome": "dataUltimoComentario",
+        "rotulo": "Data do último comentário"
+    },
+    {
+        "nome": "lembrete",
+        "rotulo": "Lembrete"
+    },
+    {
+        "nome": "canceladoPorId",
+        "rotulo": "Cancelado por"
+    },
+    {
+        "nome": "listaDocumentosGoogleDriveStr",
+        "rotulo": "Lista de Documentos do Google Drive"
+    },
+    {
+        "nome": "valorHora",
+        "rotulo": "Valor da hora"
+    },
+    {
+        "nome": "ultimoAndamentoStr",
+        "rotulo": "Último andamento do processo"
+    },
+    {
+        "nome": "caso.numeroCaso",
+        "rotulo": "Caso"
+    },
+    {
+        "nome": "movimento.descricao",
+        "rotulo": "Lançamento em conta"
+    },
+    {
+        "nome": "notasStr",
+        "rotulo": "Lista de Notas"
+    },
+    {
+        "nome": "emailsNotificacao",
+        "rotulo": "Emails para notificação"
+    },
+    {
+        "nome": "nomeCliente",
+        "rotulo": "Nome do cliente (processo)"
+    },
+    {
+        "nome": "biblioteca.numero",
+        "rotulo": "Biblioteca"
+    },
+    {
+        "nome": "processo.status",
+        "rotulo": "Status do processo"
+    },
+    {
+        "nome": "procuracao.numero",
+        "rotulo": "Procuração"
+    },
+    {
+        "nome": "recorteDiarioId",
+        "rotulo": "Recorte do diário"
+    },
+    {
+        "nome": "processo.adverso.nome",
+        "rotulo": "Adverso do processo"
+    },
+    {
+        "nome": "processo.advogadoCliente.nome",
+        "rotulo": "Advogado do cliente do processo"
+    },
+    {
+        "nome": "atividade.assunto",
+        "rotulo": "Atividade principal"
+    },
+    {
+        "nome": "linkRegistro",
+        "rotulo": "Link para atividade"
+    },
+    {
+        "nome": "processo.proprietario.nome",
+        "rotulo": "Responsável do processo"
+    },
+    {
+        "nome": "contasReceberPagar.descricao",
+        "rotulo": "Contas a receber/pagar"
+    },
+    {
+        "nome": "particular",
+        "rotulo": "Particular"
+    },
+    {
+        "nome": "ordemServico.numero",
+        "rotulo": "Ordem de Serviço"
+    },
+    {
+        "nome": "processo.cliente.nome",
+        "rotulo": "Cliente do processo"
+    },
+    {
+        "nome": "enviarEmailNotificacao",
+        "rotulo": "Enviar email de notificação no lembrete"
+    },
+    {
+        "nome": "marca.numeroProcesso",
+        "rotulo": "Marcas e patentes"
+    },
+    {
+        "nome": "proprietario.email",
+        "rotulo": "Responsável (email)"
+    },
+    {
+        "nome": "dataAlteracao",
+        "rotulo": "Última modificação (sistema)"
+    },
+    {
+        "nome": "lembreteHora",
+        "rotulo": "Lembrete hora"
+    },
+    {
+        "nome": "alteradoPor.nome",
+        "rotulo": "Alterado por (nome)"
+    },
+    {
+        "nome": "lembreteData",
+        "rotulo": "Lembrete data"
+    },
+    {
+        "nome": "criadoPor.nome",
+        "rotulo": "Criado por (nome)"
+    },
+    {
+        "nome": "encarregado.nome",
+        "rotulo": "Encarregado principal"
+    },
+    {
+        "nome": "comentariosObservacaoStr",
+        "rotulo": "Comentários/Observações"
+    },
+    {
+        "nome": "prioridade",
+        "rotulo": "Prioridade"
+    },
+    {
+        "nome": "prazo",
+        "rotulo": "Dias restantes (prazo)"
+    },
+    {
+        "nome": "dataAlteracaoUsuario",
+        "rotulo": "Última modificação"
+    },
+    {
+        "nome": "processo.excluido",
+        "rotulo": "Processo excluído"
+    },
+    {
+        "nome": "recorteConsultaId",
+        "rotulo": "Recorte da consulta de terceiros"
+    },
+    {
+        "nome": "tags",
+        "rotulo": "Tags"
+    },
+    {
+        "nome": "atividadeId",
+        "rotulo": "Atividade principal (ID)"
+    },
+    {
+        "nome": "listaSubAtividadeEmAbertoStr",
+        "rotulo": "Lista de Sub-Atividades em aberto"
+    },
+    {
+        "nome": "pessoa.telefone",
+        "rotulo": "Telefone da pessoa"
+    },
+    {
+        "nome": "processo.faseAtual.numeroOrdem",
+        "rotulo": "Número de ordem da fase atual do processo"
+    },
+    {
+        "nome": "enviarSomenteParaEmails",
+        "rotulo": "Enviar notificação somente para os emails da lista abaixo"
+    },
+    {
+        "nome": "processo.tipoAcao",
+        "rotulo": "Tipo de ação do processo"
+    },
+    {
+        "nome": "grupoUsuarioId",
+        "rotulo": "Grupo responsável"
+    },
+    {
+        "nome": "grupoUsuario.nomeUsuarios",
+        "rotulo": "Usuários do grupo responsável"
+    },
+    {
+        "nome": "listaPartesProcessoStr",
+        "rotulo": "Lista de partes do processo"
+    },
+    {
+        "nome": "calculoPrazoId",
+        "rotulo": "Cálculo de Prazo"
+    },
+    {
+        "nome": "processo.faseAtual.forum",
+        "rotulo": "Fórum da fase atual do processo"
+    },
+    {
+        "nome": "semDataTermino",
+        "rotulo": "Sem data de término"
+    },
+    {
+        "nome": "enviarEmailCadastro",
+        "rotulo": "Enviar email de notificação sempre que cadastrar/alterar."
+    },
+    {
+        "nome": "processo.faseAtual.vara",
+        "rotulo": "Vara da fase atual do processo"
+    },
+    {
+        "nome": "processo.faseAtual.estado",
+        "rotulo": "Estado da fase atual do processo"
+    },
+    {
+        "nome": "processo.faseAtual.numeroVara",
+        "rotulo": "Número da vara da fase atual do processo"
+    },
+    {
+        "nome": "horaTrabalhadaStr",
+        "rotulo": "Lista de horas trabalhadas"
+    },
+    {
+        "nome": "concluidoPorId",
+        "rotulo": "Concluído por"
+    },
+    {
+        "nome": "listaConvidados",
+        "rotulo": "Lista de convidados"
+    },
+    {
+        "nome": "listaAndamentoOrdemServicoStr",
+        "rotulo": "Lista de Andamentos da Ordem Serviço"
+    },
+    {
+        "nome": "dataHora",
+        "rotulo": "Data/hora"
+    },
+    {
+        "nome": "processo.faseAtual.numero",
+        "rotulo": "Número da fase atual do processo"
+    },
+    {
+        "nome": "processo.faseAtual.localidade",
+        "rotulo": "Localidade da fase atual do processo"
+    },
+    {
+        "nome": "processo.assunto",
+        "rotulo": "Assunto do processo"
+    },
+    {
+        "nome": "novoLembrete",
+        "rotulo": "Utilizar lembretes múltiplos"
+    },
+    {
+        "nome": "dataDiaStr",
+        "rotulo": "Data com dia da semana"
+    },
+    {
+        "nome": "data",
+        "rotulo": "Data"
+    },
+    {
+        "nome": "pessoa.nome",
+        "rotulo": "Pessoa"
+    },
+    {
+        "nome": "proprietario.nome",
+        "rotulo": "Responsável"
+    },
+    {
+        "nome": "processo.pasta",
+        "rotulo": "Processo"
+    },
+    {
+        "nome": "tipoAtividade",
+        "rotulo": "Tipo de atividade"
+    },
+    {
+        "nome": "listaDocumentosStr",
+        "rotulo": "Lista de Documentos (GED)"
+    },
+    {
+        "nome": "categoria",
+        "rotulo": "Categoria"
+    },
+    {
+        "nome": "faseProcesso.tipoFase",
+        "rotulo": "Fase do Processo"
+    },
+    {
+        "nome": "custasStr",
+        "rotulo": "Lista de custas"
+    },
+    {
+        "nome": "status",
+        "rotulo": "Situação"
+    },
+    {
+        "nome": "processo.natureza",
+        "rotulo": "Natureza do processo"
+    },
+    {
+        "nome": "prazoFatal",
+        "rotulo": "Dias restantes do prazo fatal"
+    },
+    {
+        "nome": "assunto",
+        "rotulo": "Assunto"
+    },
+    {
+        "nome": "modeloDocumentoId",
+        "rotulo": "Modelo de documento"
+    },
+    {
+        "nome": "tempoConclusaoStr",
+        "rotulo": "Total de dias até Conclusão"
+    },
+    {
+        "nome": "observacao",
+        "rotulo": "Observações"
+    },
+    {
+        "nome": "diaInteiro",
+        "rotulo": "Dia inteiro"
+    },
+    {
+        "nome": "valor_teste",
+        "rotulo": "Valor teste"
+    },
+    {
+        "nome": "mostrarHorarioComo",
+        "rotulo": "Mostrar hora como"
+    },
+    {
+        "nome": "frequenciaLabel",
+        "rotulo": "Label da Frequência"
+    },
+    {
+        "nome": "frequenciaFim",
+        "rotulo": "Data do término da série"
+    },
+    {
+        "nome": "mensalNoDia",
+        "rotulo": "Mensal do dia"
+    },
+    {
+        "nome": "semanalDias",
+        "rotulo": "Dias da semana"
+    },
+    {
+        "nome": "anualEmMes",
+        "rotulo": "Anual em Mês"
+    },
+    {
+        "nome": "anualDiaSemana",
+        "rotulo": "AnualDiaSemana"
+    },
+    {
+        "nome": "horario",
+        "rotulo": "Horário"
+    },
+    {
+        "nome": "anualTipo",
+        "rotulo": "Anual Tipo"
+    },
+    {
+        "nome": "calculoReverso",
+        "rotulo": "Cálculo reverso"
+    },
+    {
+        "nome": "frequenciaResponsive",
+        "rotulo": "Frequência personalizada"
+    },
+    {
+        "nome": "dataPublicacao",
+        "rotulo": "Data de publicação (prazo)"
+    },
+    {
+        "nome": "somenteDiasUteis",
+        "rotulo": "Considerar somente dias úteis"
+    },
+    {
+        "nome": "mensalDiaSemana",
+        "rotulo": "Mensal dia semana"
+    },
+    {
+        "nome": "mensalTipo",
+        "rotulo": "Mensal tipo"
+    },
+    {
+        "nome": "frequenciaInicio",
+        "rotulo": "Data do início da série"
+    },
+    {
+        "nome": "frequencia",
+        "rotulo": "Frequência"
+    },
+    {
+        "nome": "minutosLembrete",
+        "rotulo": "Minutos para envio de lembrete (compromissos)"
+    },
+    {
+        "nome": "mensalEm",
+        "rotulo": "Mensal em"
+    },
+    {
+        "nome": "anualNoDia",
+        "rotulo": "Anual no dia"
+    },
+    {
+        "nome": "anualEm",
+        "rotulo": "Anual em"
+    },
+    {
+        "nome": "dataFinal",
+        "rotulo": "Data sugerida"
+    },
+    {
+        "nome": "anualNoMes",
+        "rotulo": "Anual no mes"
+    },
+    {
+        "nome": "recorrente",
+        "rotulo": "Série recorrente de compromissos"
+    },
+    {
+        "nome": "duracao",
+        "rotulo": "Duração"
+    },
+    {
+        "nome": "diasPrazo",
+        "rotulo": "Dias de prazo"
+    },
+    {
+        "nome": "grupoFeriadoId",
+        "rotulo": "Grupo de feriados"
+    },
+    {
+        "nome": "hora",
+        "rotulo": "Hora inicial"
+    },
+    {
+        "nome": "local",
+        "rotulo": "Local"
+    },
+    {
+        "nome": "tipoCompromisso",
+        "rotulo": "Tipo de compromisso"
+    }
+]

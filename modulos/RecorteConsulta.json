@@ -1,0 +1,158 @@
+[
+    {
+        "nome": "mailId",
+        "rotulo": "Email"
+    },
+    {
+        "nome": "pagina",
+        "rotulo": "Página"
+    },
+    {
+        "nome": "faseProcesso.processo.adverso.nome",
+        "rotulo": "Adverso do processo"
+    },
+    {
+        "nome": "texto",
+        "rotulo": "Recorte (campo antigo)"
+    },
+    {
+        "nome": "criadoPor.nome",
+        "rotulo": "Criado por"
+    },
+    {
+        "nome": "alteradoPor.nome",
+        "rotulo": "Alterado por"
+    },
+    {
+        "nome": "dataAlteracao",
+        "rotulo": "Data da última modificação (sistema)"
+    },
+    {
+        "nome": "dataCadastro",
+        "rotulo": "Data de cadastro"
+    },
+    {
+        "nome": "linkRegistro",
+        "rotulo": "Link para Recorte da Consulta de Terceiros"
+    },
+    {
+        "nome": "outrasFases",
+        "rotulo": "Outras fases encontradas"
+    },
+    {
+        "nome": "certidao",
+        "rotulo": "Imprimir Certidão"
+    },
+    {
+        "nome": "link",
+        "rotulo": "Link"
+    },
+    {
+        "nome": "faseProcesso.processo.advogadoCliente.nome",
+        "rotulo": "Advogado do cliente do processo"
+    },
+    {
+        "nome": "lidoPor.nome",
+        "rotulo": "Lido por"
+    },
+    {
+        "nome": "dataLeitura",
+        "rotulo": "Data da leitura"
+    },
+    {
+        "nome": "configConsultaRecorteId",
+        "rotulo": "Configuração de consulta de recorte"
+    },
+    {
+        "nome": "faseProcesso.processo.proprietario.nome",
+        "rotulo": "Responsável do processo"
+    },
+    {
+        "nome": "lido",
+        "rotulo": "Lido"
+    },
+    {
+        "nome": "faseProcesso.processo.natureza",
+        "rotulo": "Natureza do processo"
+    },
+    {
+        "nome": "faseProcesso.processo.cliente.nome",
+        "rotulo": "Cliente do processo"
+    },
+    {
+        "nome": "assunto",
+        "rotulo": "Assunto"
+    },
+    {
+        "nome": "andamentoFaseId",
+        "rotulo": "Andamento da fase"
+    },
+    {
+        "nome": "faseProcessoId",
+        "rotulo": "Fase do processo principal"
+    },
+    {
+        "nome": "caderno",
+        "rotulo": "Caderno"
+    },
+    {
+        "nome": "atividadeId",
+        "rotulo": "Atividade"
+    },
+    {
+        "nome": "resultadoConsultaRecorteId",
+        "rotulo": "Resultado da consulta do recorte"
+    },
+    {
+        "nome": "observacao",
+        "rotulo": "Observações do recorte"
+    },
+    {
+        "nome": "resumoCampos",
+        "rotulo": "Campos da Configuração"
+    },
+    {
+        "nome": "faseProcesso.processo.pasta",
+        "rotulo": "Processo"
+    },
+    {
+        "nome": "vara",
+        "rotulo": "Vara"
+    },
+    {
+        "nome": "tribunal",
+        "rotulo": "Tribunal"
+    },
+    {
+        "nome": "textoCompleto",
+        "rotulo": "Recorte"
+    },
+    {
+        "nome": "faseProcesso.processo.processoPrincipal.pasta",
+        "rotulo": "Processo principal"
+    },
+    {
+        "nome": "intimacao",
+        "rotulo": "Tipo de Intimação"
+    },
+    {
+        "nome": "data",
+        "rotulo": "Data de disponibilização"
+    },
+    {
+        "nome": "numeroProcesso",
+        "rotulo": "Número do processo"
+    },
+    {
+        "nome": "dataPublicacao",
+        "rotulo": "Publicação"
+    },
+    {
+        "nome": "jornal",
+        "rotulo": "Jornal"
+    },
+    {
+        "nome": "atividade.proprietario.nome",
+        "rotulo": "Responsável da atividade"
+    }
+]

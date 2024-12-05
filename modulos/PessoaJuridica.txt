@@ -1,0 +1,378 @@
+[
+    {
+        "nome": "representanteLegal.nome",
+        "rotulo": "Representante legal"
+    },
+    {
+        "nome": "eunidade",
+        "rotulo": "Unidade da empresa"
+    },
+    {
+        "nome": "escritorioAdvocacia",
+        "rotulo": "Escritório de advocacia"
+    },
+    {
+        "nome": "cnpj",
+        "rotulo": "CNPJ"
+    },
+    {
+        "nome": "inscricaoMunicipal",
+        "rotulo": "Inscrição municipal"
+    },
+    {
+        "nome": "inscricaoEstadual",
+        "rotulo": "Inscrição estadual"
+    },
+    {
+        "nome": "nomeFantasia",
+        "rotulo": "Nome fantasia"
+    },
+    {
+        "nome": "nome",
+        "rotulo": "Nome"
+    },
+    {
+        "nome": "proprietario.nome",
+        "rotulo": "Responsável"
+    },
+    {
+        "nome": "email",
+        "rotulo": "Email"
+    },
+    {
+        "nome": "telefone",
+        "rotulo": "Telefone"
+    },
+    {
+        "nome": "enderecosnumero",
+        "rotulo": "Outro número"
+    },
+    {
+        "nome": "situacaoCadastralReceita",
+        "rotulo": "Situação cadastral do cpf/cnpj na Receita Federal"
+    },
+    {
+        "nome": "enderecoprua",
+        "rotulo": "Endereço"
+    },
+    {
+        "nome": "enderecoscomplemento",
+        "rotulo": "Outro complemento"
+    },
+    {
+        "nome": "enderecopnumero",
+        "rotulo": "Número"
+    },
+    {
+        "nome": "enderecopcomplemento",
+        "rotulo": "Complemento"
+    },
+    {
+        "nome": "enderecopbairro",
+        "rotulo": "Bairro"
+    },
+    {
+        "nome": "enderecopcep",
+        "rotulo": "Cep"
+    },
+    {
+        "nome": "enderecopcidade",
+        "rotulo": "Cidade"
+    },
+    {
+        "nome": "enderecopestado",
+        "rotulo": "Estado"
+    },
+    {
+        "nome": "site",
+        "rotulo": "Site"
+    },
+    {
+        "nome": "particular",
+        "rotulo": "Particular"
+    },
+    {
+        "nome": "valorHora",
+        "rotulo": "Valor da hora"
+    },
+    {
+        "nome": "dataAlteracao",
+        "rotulo": "Data da última modificação (sistema)"
+    },
+    {
+        "nome": "outroEmail",
+        "rotulo": "Outro email"
+    },
+    {
+        "nome": "imagemUrl",
+        "rotulo": "Imagem da pessoa"
+    },
+    {
+        "nome": "grupo",
+        "rotulo": "Grupo"
+    },
+    {
+        "nome": "pessoaJuridica.nome",
+        "rotulo": "Contato de"
+    },
+    {
+        "nome": "alteradoPor.nome",
+        "rotulo": "Alterado por"
+    },
+    {
+        "nome": "fax",
+        "rotulo": "Fax"
+    },
+    {
+        "nome": "outroTelefone",
+        "rotulo": "Outro telefone"
+    },
+    {
+        "nome": "cliente",
+        "rotulo": "Cliente"
+    },
+    {
+        "nome": "valorTotalHoraTrabalhadasAprovado",
+        "rotulo": "Valor total de horas trabalhadas aprovadas"
+    },
+    {
+        "nome": "ultimoDocumentoStr",
+        "rotulo": "Último documento (GED)"
+    },
+    {
+        "nome": "grupoUsuarioId",
+        "rotulo": "Grupo responsável"
+    },
+    {
+        "nome": "listaUltimosAnexos",
+        "rotulo": "Lista de últimas Notas e Documentos"
+    },
+    {
+        "nome": "listaDocumentosStr",
+        "rotulo": "Lista de Documentos (GED)"
+    },
+    {
+        "nome": "listaContratosStr",
+        "rotulo": "Lista de Contrato(s) da pessoa"
+    },
+    {
+        "nome": "assuntoUltimaAtividade",
+        "rotulo": "Assunto da última atividade"
+    },
+    {
+        "nome": "listaUltimosEmails",
+        "rotulo": "Últimos emails enviados"
+    },
+    {
+        "nome": "totalCustasSaldoStr",
+        "rotulo": "Total de custas saldo (receita - despesas)"
+    },
+    {
+        "nome": "anotacoes",
+        "rotulo": "Anotações"
+    },
+    {
+        "nome": "moedaValorHora",
+        "rotulo": "Moeda do valor da hora"
+    },
+    {
+        "nome": "numeroINPI",
+        "rotulo": "Nº INPI"
+    },
+    {
+        "nome": "empresaGrupo.nome",
+        "rotulo": "Empresa Atual"
+    },
+    {
+        "nome": "centroCustoId",
+        "rotulo": "Centro de custo"
+    },
+    {
+        "nome": "usuariosUnidade",
+        "rotulo": "Usuário para aprovação de custas da Unidade"
+    },
+    {
+        "nome": "custasPessoaStr",
+        "rotulo": "Lista de custas da pessoa"
+    },
+    {
+        "nome": "historicoAtividadesStr",
+        "rotulo": "Lista de histórico de atividades"
+    },
+    {
+        "nome": "indicante",
+        "rotulo": "Indicante"
+    },
+    {
+        "nome": "custasNaoPagasStr",
+        "rotulo": "Lista de custas não pagas da pessoa"
+    },
+    {
+        "nome": "custasPagasStr",
+        "rotulo": "Lista de custas pagas da pessoa"
+    },
+    {
+        "nome": "listaContasReceberPagarStr",
+        "rotulo": "Lista de contas a receber/pagar em aberto"
+    },
+    {
+        "nome": "totalCustasDespesasStr",
+        "rotulo": "Total de custas despesas"
+    },
+    {
+        "nome": "totalCustasReceitasStr",
+        "rotulo": "Total de custas receitas"
+    },
+    {
+        "nome": "numeroDocumento",
+        "rotulo": "Documento (CPF ou CNPJ)"
+    },
+    {
+        "nome": "totalContasReceber",
+        "rotulo": "Valor total de contas a receber em aberto"
+    },
+    {
+        "nome": "alerta",
+        "rotulo": "Mensagem de alerta"
+    },
+    {
+        "nome": "listaContasReceberPagarVencidasStr",
+        "rotulo": "Lista de contas a receber/pagar vencidas"
+    },
+    {
+        "nome": "totalCustasNaoPago",
+        "rotulo": "Valor total de custas não pagas"
+    },
+    {
+        "nome": "statusPessoa",
+        "rotulo": "Situação"
+    },
+    {
+        "nome": "codigoPessoa",
+        "rotulo": "Código da pessoa"
+    },
+    {
+        "nome": "totalContasReceberVencidas",
+        "rotulo": "Valor total de contas a receber em aberto vencidas"
+    },
+    {
+        "nome": "dataUltimaAtividade",
+        "rotulo": "Data da última atividade"
+    },
+    {
+        "nome": "tags",
+        "rotulo": "Tags"
+    },
+    {
+        "nome": "listaContatosStr",
+        "rotulo": "Lista de contatos da pessoa"
+    },
+    {
+        "nome": "listaProcessosStr",
+        "rotulo": "Lista de processos da pessoa"
+    },
+    {
+        "nome": "cadastroAutomaticoParte",
+        "rotulo": "Cadastro realizado pela consulta internet"
+    },
+    {
+        "nome": "totalCustasPago",
+        "rotulo": "Valor total de custas pagas"
+    },
+    {
+        "nome": "dataAlteracaoUsuario",
+        "rotulo": "Data da última modificação"
+    },
+    {
+        "nome": "emailCobranca",
+        "rotulo": "Email de cobrança"
+    },
+    {
+        "nome": "usuariosStr",
+        "rotulo": "Lista de usuários"
+    },
+    {
+        "nome": "linkResumoFinanceiro",
+        "rotulo": "Link para resumo do financeiro"
+    },
+    {
+        "nome": "tipoPessoa",
+        "rotulo": "Tipo de pessoa"
+    },
+    {
+        "nome": "descadastrarEmail",
+        "rotulo": "Cliente não deseja receber emails"
+    },
+    {
+        "nome": "criadoPor.nome",
+        "rotulo": "Criado por"
+    },
+    {
+        "nome": "dataCadastro",
+        "rotulo": "Data de cadastro"
+    },
+    {
+        "nome": "indicadoPor.nome",
+        "rotulo": "Indicado por"
+    },
+    {
+        "nome": "listaEmpresasStr",
+        "rotulo": "Lista de empresas"
+    },
+    {
+        "nome": "whatsapp_cliente",
+        "rotulo": "WhatsApp Grupo Cliente?"
+    },
+    {
+        "nome": "listaHorasTrabalhadaStr",
+        "rotulo": "Lista de Horas Trabalhadas da pessoa"
+    },
+    {
+        "nome": "comentariosStr",
+        "rotulo": "Comentários"
+    },
+    {
+        "nome": "valorTotalContasAbertas",
+        "rotulo": "Valor total em aberto"
+    },
+    {
+        "nome": "linkRegistro",
+        "rotulo": "Link para Pessoa"
+    },
+    {
+        "nome": "listaCasosStr",
+        "rotulo": "Lista de casos da pessoa"
+    },
+    {
+        "nome": "enderecospais",
+        "rotulo": "Outro País"
+    },
+    {
+        "nome": "enderecoscidade",
+        "rotulo": "Outra cidade"
+    },
+    {
+        "nome": "enderecosbairro",
+        "rotulo": "Outro bairro"
+    },
+    {
+        "nome": "enderecoscep",
+        "rotulo": "Outro cep"
+    },
+    {
+        "nome": "enderecosrua",
+        "rotulo": "Outro endereço"
+    },
+    {
+        "nome": "enderecoppais",
+        "rotulo": "País"
+    },
+    {
+        "nome": "enderecosestado",
+        "rotulo": "Outro Estado"
+    },
+    {
+        "nome": "unsubscribeUrl",
+        "rotulo": "Url para descadastrar recebimento de emails"
+    }
+]

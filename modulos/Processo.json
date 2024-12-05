@@ -1,0 +1,762 @@
+[
+    {
+        "nome": "pasta",
+        "rotulo": "Processo"
+    },
+    {
+        "nome": "proprietario.nome",
+        "rotulo": "Responsável"
+    },
+    {
+        "nome": "dataAbertura",
+        "rotulo": "Data de abertura do Processo"
+    },
+    {
+        "nome": "tipoAcao",
+        "rotulo": "Tipo de ação"
+    },
+    {
+        "nome": "assunto",
+        "rotulo": "Situação"
+    },
+    {
+        "nome": "cliente.nome",
+        "rotulo": "Cliente"
+    },
+    {
+        "nome": "processoPrincipal.pasta",
+        "rotulo": "Processo principal"
+    },
+    {
+        "nome": "posicaoCliente",
+        "rotulo": "Posição do cliente"
+    },
+    {
+        "nome": "advogadoCliente.nome",
+        "rotulo": "Advogado do cliente"
+    },
+    {
+        "nome": "faseAtual.data",
+        "rotulo": "Data da fase atual"
+    },
+    {
+        "nome": "tipoProcesso",
+        "rotulo": "Tipo de processo"
+    },
+    {
+        "nome": "valor_homologado_juiz",
+        "rotulo": "Valor homologado juiz"
+    },
+    {
+        "nome": "cliente.profissao",
+        "rotulo": "Profissão - Cliente"
+    },
+    {
+        "nome": "der",
+        "rotulo": "DER (data de entrada do requerimento)"
+    },
+    {
+        "nome": "dip",
+        "rotulo": "DIP (data início do pagamento)"
+    },
+    {
+        "nome": "cliente.anotacoes",
+        "rotulo": "Anotações - Cliente"
+    },
+    {
+        "nome": "adverso.nome",
+        "rotulo": "Adverso"
+    },
+    {
+        "nome": "decisoesStr",
+        "rotulo": "Lista de decisões de todas as fases do processo"
+    },
+    {
+        "nome": "totalCustasDespesasStr",
+        "rotulo": "Total de custas despesas"
+    },
+    {
+        "nome": "listaEmprestimoProcessoStr",
+        "rotulo": "Lista de empréstimos do processo"
+    },
+    {
+        "nome": "status",
+        "rotulo": "Status"
+    },
+    {
+        "nome": "diasAtivo",
+        "rotulo": "Número de dias do processo ativo"
+    },
+    {
+        "nome": "adverso.enderecopcidade",
+        "rotulo": "Cidade do adverso"
+    },
+    {
+        "nome": "faseAtual.numeroOrdem",
+        "rotulo": "Número de ordem da fase atual"
+    },
+    {
+        "nome": "adverso.dataAdmissao",
+        "rotulo": "Data de Admissão do adverso"
+    },
+    {
+        "nome": "moedaValorHora",
+        "rotulo": "Moeda do valor da hora"
+    },
+    {
+        "nome": "adverso.dataDemissao",
+        "rotulo": "Data de Demissão do adverso"
+    },
+    {
+        "nome": "cliente.enderecopcomplemento",
+        "rotulo": "Complemento (endereço) do cliente"
+    },
+    {
+        "nome": "faseAtual.orgao.nome",
+        "rotulo": "Orgão da fase atual"
+    },
+    {
+        "nome": "faseAtual.tipoFase",
+        "rotulo": "Tipo da fase atual"
+    },
+    {
+        "nome": "moedaValorCausa",
+        "rotulo": "Moeda do valor da causa"
+    },
+    {
+        "nome": "ultimoDocumentoStr",
+        "rotulo": "Último documento (GED)"
+    },
+    {
+        "nome": "listaDocumentosStr",
+        "rotulo": "Lista de Documentos (GED)"
+    },
+    {
+        "nome": "listaPrazoAbertoStr",
+        "rotulo": "Lista de prazos em aberto"
+    },
+    {
+        "nome": "ultimaConfigConsultaId",
+        "rotulo": "Última configuração de consulta"
+    },
+    {
+        "nome": "contrato.numero",
+        "rotulo": "Contrato principal"
+    },
+    {
+        "nome": "usuarioEncerra.nome",
+        "rotulo": "Responsável pelo encerramento"
+    },
+    {
+        "nome": "statusNovoProcesso",
+        "rotulo": "Status da consulta de novo processo CNJ"
+    },
+    {
+        "nome": "dataUltimoTentativa",
+        "rotulo": "Data da última tentativa da consulta de novo processo CNJ"
+    },
+    {
+        "nome": "dataProximaTentativa",
+        "rotulo": "Data da próxima tentativa da consulta de novo processo CNJ"
+    },
+    {
+        "nome": "listaDocumentosGoogleDriveStr",
+        "rotulo": "Lista de documentos Google Drive"
+    },
+    {
+        "nome": "caso.numeroCaso",
+        "rotulo": "Caso principal"
+    },
+    {
+        "nome": "cliente.enderecopbairro",
+        "rotulo": "Bairro do cliente"
+    },
+    {
+        "nome": "valorFaturado",
+        "rotulo": "Valor apresentado pelo INSS"
+    },
+    {
+        "nome": "faseAtual.instancia",
+        "rotulo": "Instância da fase atual"
+    },
+    {
+        "nome": "movimentosStr",
+        "rotulo": "Lista de lançamentos em conta"
+    },
+    {
+        "nome": "reativarProcesso",
+        "rotulo": "Reativar processo em"
+    },
+    {
+        "nome": "faseAtual.vara",
+        "rotulo": "Vara da fase atual"
+    },
+    {
+        "nome": "faseAtual.estado",
+        "rotulo": "Estado da fase atual"
+    },
+    {
+        "nome": "particular",
+        "rotulo": "Particular"
+    },
+    {
+        "nome": "cliente.numeroDocumento",
+        "rotulo": "Cpf/Cnpj do cliente"
+    },
+    {
+        "nome": "tipoDiligencia",
+        "rotulo": "Tipo de diligência"
+    },
+    {
+        "nome": "alerta",
+        "rotulo": "Mensagem de alerta"
+    },
+    {
+        "nome": "adverso.numeroDocumento",
+        "rotulo": "Cpf/Cnpj do Adverso"
+    },
+    {
+        "nome": "cliente.empresaGrupo.nome",
+        "rotulo": "Nome do Grupo Empresarial do cliente"
+    },
+    {
+        "nome": "dataEncerrado",
+        "rotulo": "Data de encerramento"
+    },
+    {
+        "nome": "advogadoAdverso.nome",
+        "rotulo": "Advogado do adverso"
+    },
+    {
+        "nome": "tipoEncerramento",
+        "rotulo": "Tipo de encerramento"
+    },
+    {
+        "nome": "posicaoAdverso",
+        "rotulo": "Posição do adverso"
+    },
+    {
+        "nome": "faseAtual.forum",
+        "rotulo": "Fórum da fase atual"
+    },
+    {
+        "nome": "moedaValorFaturado",
+        "rotulo": "Moeda do valor faturado"
+    },
+    {
+        "nome": "moedaValorSentenca",
+        "rotulo": "Moeda do valor da sentença"
+    },
+    {
+        "nome": "listaUltimosAndamentosConsultaInternetFaseAtualStr",
+        "rotulo": "Últimos andamentos do processo da fase atual (somente consulta internet)"
+    },
+    {
+        "nome": "id",
+        "rotulo": "ID do processo"
+    },
+    {
+        "nome": "grupoUsuario.nomeUsuarios",
+        "rotulo": "Usuários do grupo responsável"
+    },
+    {
+        "nome": "totalCustasPago",
+        "rotulo": "Valor total de custas pagas"
+    },
+    {
+        "nome": "dataPrimeiroAndamento",
+        "rotulo": "Data do primeiro andamento"
+    },
+    {
+        "nome": "valorHora",
+        "rotulo": "Valor da hora"
+    },
+    {
+        "nome": "totalCustasReceitasStr",
+        "rotulo": "Total de custas receitas"
+    },
+    {
+        "nome": "moedaValorPagoJuizo",
+        "rotulo": "Moeda do valor pago em juízo"
+    },
+    {
+        "nome": "subProcessosStr",
+        "rotulo": "Sub-Processos"
+    },
+    {
+        "nome": "valorProvisionado",
+        "rotulo": "Valor provisionado (Honorários Sucumbenciais)"
+    },
+    {
+        "nome": "valorPagoJuizo",
+        "rotulo": "Total pago em Juízo"
+    },
+    {
+        "nome": "tags",
+        "rotulo": "Tags"
+    },
+    {
+        "nome": "resumoProcesso",
+        "rotulo": "Resumo do processo"
+    },
+    {
+        "nome": "faseAtual.orgao.email",
+        "rotulo": "Email do Órgão da fase atual"
+    },
+    {
+        "nome": "faseAtual.orgao.telefone",
+        "rotulo": "Telefone do Órgão da fase atual"
+    },
+    {
+        "nome": "rascunho",
+        "rotulo": "Rascunho"
+    },
+    {
+        "nome": "listaResumosCalculosStr",
+        "rotulo": "Lista com o resumo dos cálculos"
+    },
+    {
+        "nome": "dataAlteracaoUsuario",
+        "rotulo": "Data da última modificação"
+    },
+    {
+        "nome": "listaUltimosAndamentosManualStr",
+        "rotulo": "Últimos andamentos do processo (somente cadastro manual)"
+    },
+    {
+        "nome": "linkStatusUltimaConsultaInternet",
+        "rotulo": "Link para Status da última consulta internet"
+    },
+    {
+        "nome": "listaUltimosAndamentosComDescObsParecerStr",
+        "rotulo": "Últimos andamentos do processo com descrição, observações e parecer"
+    },
+    {
+        "nome": "custasPagasStr",
+        "rotulo": "Lista de custas pagas do processo"
+    },
+    {
+        "nome": "custasNaoPagasStr",
+        "rotulo": "Lista de custas não pagas do processo"
+    },
+    {
+        "nome": "situacaoEmprestimo",
+        "rotulo": "Situação do empréstimo"
+    },
+    {
+        "nome": "valorSentencaExtenso",
+        "rotulo": "Valor da sentença por extenso"
+    },
+    {
+        "nome": "valorCausaExtenso",
+        "rotulo": "Valor da Causa por extenso"
+    },
+    {
+        "nome": "vustoProcessoExtenso",
+        "rotulo": "Valor do custo do processo por extenso"
+    },
+    {
+        "nome": "listaUltimosAndamentosSubProcessoStr",
+        "rotulo": "Últimos andamentos dos sub-processos"
+    },
+    {
+        "nome": "listaUltimosAndamentosConsultaInternetStr",
+        "rotulo": "Últimos andamentos do processo (somente consulta internet)"
+    },
+    {
+        "nome": "totalTentativas",
+        "rotulo": "Total de tentativas na consulta de novo processo CNJ"
+    },
+    {
+        "nome": "valorProvisionadoExtenso",
+        "rotulo": "Valor provisionado por extenso"
+    },
+    {
+        "nome": "nomeGrupoEmpresarialCliente",
+        "rotulo": "Nome do Grupo Empresarial do cliente (derivado)"
+    },
+    {
+        "nome": "cliente.enderecopcep",
+        "rotulo": "Cep do cliente"
+    },
+    {
+        "nome": "dataValorCausa",
+        "rotulo": "Data do valor da causa"
+    },
+    {
+        "nome": "dataValorPagoJuizo",
+        "rotulo": "Data do valor pago em Juízo"
+    },
+    {
+        "nome": "dataCustoProcesso",
+        "rotulo": "Data do custo do processo"
+    },
+    {
+        "nome": "localizacaoFisica",
+        "rotulo": "Localização física"
+    },
+    {
+        "nome": "partesStr",
+        "rotulo": "Lista de partes"
+    },
+    {
+        "nome": "partesAutoraStr",
+        "rotulo": "Parte Autora"
+    },
+    {
+        "nome": "partesReuStr",
+        "rotulo": "Parte Ré"
+    },
+    {
+        "nome": "faseAtual.decisoesStr",
+        "rotulo": "Lista de decisões da fase atual do processo"
+    },
+    {
+        "nome": "atividadesAbertasStr",
+        "rotulo": "Lista de atividades abertas"
+    },
+    {
+        "nome": "historicoAtividadesStr",
+        "rotulo": "Lista de histórico de atividades"
+    },
+    {
+        "nome": "listaAndamentosDescricaoStr",
+        "rotulo": "Andamentos do processo somente com descrição"
+    },
+    {
+        "nome": "adverso.cargo",
+        "rotulo": "Cargo do Adverso"
+    },
+    {
+        "nome": "statusUltimaConsultaInternetStr",
+        "rotulo": "Status da última consulta internet"
+    },
+    {
+        "nome": "totalCustasSaldoStr",
+        "rotulo": "Total de custas saldo (receita - despesas)"
+    },
+    {
+        "nome": "totalCustasNaoPagoPorExtenso",
+        "rotulo": "Valor total de custas não pagas por extenso"
+    },
+    {
+        "nome": "listaContasReceberPagarVencidasStr",
+        "rotulo": "Lista de contas a receber/pagar vencidas"
+    },
+    {
+        "nome": "listaContasReceberPagarStr",
+        "rotulo": "Lista de contas a receber/pagar em aberto"
+    },
+    {
+        "nome": "listaHorasTrabalhadasStr",
+        "rotulo": "Lista de Horas Trabalhadas"
+    },
+    {
+        "nome": "listaApensosStr",
+        "rotulo": "Lista de Apensos"
+    },
+    {
+        "nome": "custoProcesso",
+        "rotulo": "Custo do processo"
+    },
+    {
+        "nome": "valorSentenca",
+        "rotulo": "Valor da sentença Trabalhista/Cível"
+    },
+    {
+        "nome": "listaHorasTrabalhadaStr",
+        "rotulo": "Lista de Horas Trabalhadas da pessoa"
+    },
+    {
+        "nome": "totalGarantiasProcessoStr",
+        "rotulo": "Total de garantias/depósitos"
+    },
+    {
+        "nome": "listaConfigConsultaInternetStr",
+        "rotulo": "Lista de configurações de consulta"
+    },
+    {
+        "nome": "pedidoProcessoStr",
+        "rotulo": "Lista de pedidos/objetos"
+    },
+    {
+        "nome": "listaUltimosAndamentosComDescricaoParecerStr",
+        "rotulo": "Últimos andamentos do processo com descrição e parecer"
+    },
+    {
+        "nome": "totalNominalCalculosProcessoStr",
+        "rotulo": "Total Nominal de Cálculos"
+    },
+    {
+        "nome": "custasProcessoStr",
+        "rotulo": "Lista de custas do processo"
+    },
+    {
+        "nome": "listaFasesStr",
+        "rotulo": "Lista de fases do processo"
+    },
+    {
+        "nome": "totalCustasNaoPago",
+        "rotulo": "Valor total de custas não pagas"
+    },
+    {
+        "nome": "totalCustasPagoPorExtenso",
+        "rotulo": "Valor total de custas pagas por extenso"
+    },
+    {
+        "nome": "garantiasProcessoStr",
+        "rotulo": "Lista de garantias/depósitos"
+    },
+    {
+        "nome": "cliente.dataNascimento",
+        "rotulo": "Data de nascimento do cliente"
+    },
+    {
+        "nome": "dataUltimoAndamentoManual",
+        "rotulo": "Data do último andamento (cadastro manual)"
+    },
+    {
+        "nome": "listaUltimosAndamentosStr",
+        "rotulo": "Últimos andamentos do processo"
+    },
+    {
+        "nome": "listaUltimosAndamentosObsStr",
+        "rotulo": "Últimos andamentos do processo sem descrição"
+    },
+    {
+        "nome": "listaAndamentosParecerStr",
+        "rotulo": "Andamentos do processo somente com parecer"
+    },
+    {
+        "nome": "cliente.enderecoprua",
+        "rotulo": "Endereço do cliente"
+    },
+    {
+        "nome": "possibilidade",
+        "rotulo": "Possibilidade de ganho "
+    },
+    {
+        "nome": "cliente.enderecopcidade",
+        "rotulo": "Cidade do cliente"
+    },
+    {
+        "nome": "dataValorSentenca",
+        "rotulo": "Data do valor da sentença"
+    },
+    {
+        "nome": "dataUltimoAndamento",
+        "rotulo": "Data do último andamento"
+    },
+    {
+        "nome": "faseAtual.localidade",
+        "rotulo": "Localidade da fase atual"
+    },
+    {
+        "nome": "listaUltimosAndamentosTipoFaseStr",
+        "rotulo": "Últimos andamentos do processo (cadastro manual) com tipo de fase"
+    },
+    {
+        "nome": "valorTotalHoraTrabalhadasAprovado",
+        "rotulo": "Valor total de horas trabalhadas aprovadas"
+    },
+    {
+        "nome": "calculosStr",
+        "rotulo": "Lista de cálculos somente com valores"
+    },
+    {
+        "nome": "listaUltimosAndamentosSomenteFaseAtualStr",
+        "rotulo": "Últimos andamentos do processo da fase atual"
+    },
+    {
+        "nome": "totalAtualizadoCalculosProcessoStr",
+        "rotulo": "Total Atualizado de Cálculos"
+    },
+    {
+        "nome": "listaUltimosAndamentosManualFaseAtualStr",
+        "rotulo": "Últimos andamentos do processo da fase atual (somente cadastro manual)"
+    },
+    {
+        "nome": "listaOrdemServicoStr",
+        "rotulo": "Lista de Ordem de Serviço"
+    },
+    {
+        "nome": "dataAlteracao",
+        "rotulo": "Data da última modificação (sistema)"
+    },
+    {
+        "nome": "excluido",
+        "rotulo": "Excluído"
+    },
+    {
+        "nome": "adverso.dataNascimento",
+        "rotulo": "Data de nascimento do adverso"
+    },
+    {
+        "nome": "natureza",
+        "rotulo": "Natureza"
+    },
+    {
+        "nome": "faseAtual.numeroVara",
+        "rotulo": "Número da vara da fase atual"
+    },
+    {
+        "nome": "linkRegistro",
+        "rotulo": "Link para Processo"
+    },
+    {
+        "nome": "criadoPor.nome",
+        "rotulo": "Criado por"
+    },
+    {
+        "nome": "alteradoPor.nome",
+        "rotulo": "Alterado por"
+    },
+    {
+        "nome": "observacao",
+        "rotulo": "Observações"
+    },
+    {
+        "nome": "valorCausa",
+        "rotulo": "Valor da Causa"
+    },
+    {
+        "nome": "cliente.nomeMae",
+        "rotulo": "Nome da mãe - Cliente"
+    },
+    {
+        "nome": "cliente.dataAniversario",
+        "rotulo": "Data de aniversário - Cliente"
+    },
+    {
+        "nome": "valor_apresentado",
+        "rotulo": "Valor apresentado pelo autor"
+    },
+    {
+        "nome": "grupoUsuarioId",
+        "rotulo": "Grupo responsável"
+    },
+    {
+        "nome": "faseAtual.numero",
+        "rotulo": "Número da fase atual"
+    },
+    {
+        "nome": "valor_provisionado_h",
+        "rotulo": "Valores Recebidos (Honorários Contratuais + Sucumbenciais)"
+    },
+    {
+        "nome": "valor",
+        "rotulo": "Valor provisionado (Honorários Contratuais)"
+    },
+    {
+        "nome": "cliente.email",
+        "rotulo": "Email - Cliente"
+    },
+    {
+        "nome": "iniciais_mutir",
+        "rotulo": "Mutirão?"
+    },
+    {
+        "nome": "moeda_valor_provisionado_h",
+        "rotulo": "Moeda Valores Recebidos (Honorários Contratuais + Sucumbenciais)"
+    },
+    {
+        "nome": "diligencia",
+        "rotulo": "Processo para diligência"
+    },
+    {
+        "nome": "faseAtual.decisao",
+        "rotulo": "Decisão da fase atual do processo"
+    },
+    {
+        "nome": "dataValorProvisionado",
+        "rotulo": "Data do valor provisionado"
+    },
+    {
+        "nome": "ganhoCausa",
+        "rotulo": "Ganho de causa"
+    },
+    {
+        "nome": "tipoGanho",
+        "rotulo": "Tipo de ganho de causa"
+    },
+    {
+        "nome": "cliente.enderecopnumero",
+        "rotulo": "Número (endereço) do cliente"
+    },
+    {
+        "nome": "cliente.enderecopestado",
+        "rotulo": "Estado do cliente"
+    },
+    {
+        "nome": "listaAudienciaStr",
+        "rotulo": "Lista de audiências do processo"
+    },
+    {
+        "nome": "moedaCustoProcesso",
+        "rotulo": "Moeda custo do processo"
+    },
+    {
+        "nome": "partesClienteStr",
+        "rotulo": "Lista de partes clientes"
+    },
+    {
+        "nome": "listaUltimosAndamentosParecerStr",
+        "rotulo": "Últimos andamentos do processo (parecer)"
+    },
+    {
+        "nome": "tese",
+        "rotulo": "Tese Jurídica Predominante"
+    },
+    {
+        "nome": "moedaValorProvisionado",
+        "rotulo": "Moeda do valor provisionado"
+    },
+    {
+        "nome": "tempo_total",
+        "rotulo": "Tempo Total"
+    },
+    {
+        "nome": "observacaoEncerramento",
+        "rotulo": "Observações do encerramento"
+    },
+    {
+        "nome": "cobran",
+        "rotulo": "Cobrança Honorários"
+    },
+    {
+        "nome": "cliente.cargo",
+        "rotulo": "Cargo atual - Cliente"
+    },
+    {
+        "nome": "dataCadastro",
+        "rotulo": "Data de cadastro"
+    },
+    {
+        "nome": "cliente.telefone",
+        "rotulo": "Telefone do cliente"
+    },
+    {
+        "nome": "listaAudienciaAbertoStr",
+        "rotulo": "Lista de audiências em aberto"
+    },
+    {
+        "nome": "driveFolderUrl",
+        "rotulo": "URL da pasta padrão do Google Drive"
+    },
+    {
+        "nome": "comentariosStr",
+        "rotulo": "Comentários"
+    },
+    {
+        "nome": "rmi",
+        "rotulo": "RMA (renda mensal atual)"
+    },
+    {
+        "nome": "moeda_rmi",
+        "rotulo": "Moeda RMA (renda mensal atual)"
+    },
+    {
+        "nome": "contratosStr",
+        "rotulo": "Lista de contratos"
+    }
+]

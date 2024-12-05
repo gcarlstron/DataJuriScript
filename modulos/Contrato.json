@@ -1,0 +1,294 @@
+[
+    {
+        "nome": "contratoPrincipal.numero",
+        "rotulo": "Contrato principal"
+    },
+    {
+        "nome": "partesStr",
+        "rotulo": "Lista de partes"
+    },
+    {
+        "nome": "tipoPrazo",
+        "rotulo": "Tipo de prazo"
+    },
+    {
+        "nome": "processosStr",
+        "rotulo": "Lista de processos"
+    },
+    {
+        "nome": "comentariosStr",
+        "rotulo": "Comentários"
+    },
+    {
+        "nome": "descricao",
+        "rotulo": "Descrição"
+    },
+    {
+        "nome": "poderes",
+        "rotulo": "Poderes"
+    },
+    {
+        "nome": "dataVencimento",
+        "rotulo": "Data de vencimento"
+    },
+    {
+        "nome": "subContratoStr",
+        "rotulo": "Sub-Contratos"
+    },
+    {
+        "nome": "dataAlteracaoUsuario",
+        "rotulo": "Data da última modificação"
+    },
+    {
+        "nome": "listaResumosCalculosStr",
+        "rotulo": "Lista com o resumo dos cálculos"
+    },
+    {
+        "nome": "dataEncerramento",
+        "rotulo": "Data de encerramento"
+    },
+    {
+        "nome": "listaLembretesStr",
+        "rotulo": "Lista de lembretes"
+    },
+    {
+        "nome": "dataReajusteAnterior",
+        "rotulo": "Data do reajuste anterior"
+    },
+    {
+        "nome": "indiceReajusteId",
+        "rotulo": "Índice de reajuste"
+    },
+    {
+        "nome": "dataProximoReajuste",
+        "rotulo": "Data do próximo reajuste"
+    },
+    {
+        "nome": "mesesPrazo",
+        "rotulo": "Prazo"
+    },
+    {
+        "nome": "valor",
+        "rotulo": "Valor"
+    },
+    {
+        "nome": "reajustePercentual",
+        "rotulo": "Percentual de reajuste (%)"
+    },
+    {
+        "nome": "contatarLocador",
+        "rotulo": "Data para contatar locador"
+    },
+    {
+        "nome": "notasStr",
+        "rotulo": "Lista de Notas"
+    },
+    {
+        "nome": "moedaValor",
+        "rotulo": "Moeda do valor"
+    },
+    {
+        "nome": "dataAcaoRenovatoria",
+        "rotulo": "Data da ação renovatória"
+    },
+    {
+        "nome": "objetoContratoStr",
+        "rotulo": "Lista de objetos"
+    },
+    {
+        "nome": "valorPorTipo",
+        "rotulo": "Valor por Tipo de Pagamento"
+    },
+    {
+        "nome": "dataRescisao",
+        "rotulo": "Data da rescisão"
+    },
+    {
+        "nome": "reajustePeriodicidade",
+        "rotulo": "Periodicidade do reajuste"
+    },
+    {
+        "nome": "dataInicioVigencia",
+        "rotulo": "Data do início da vigência"
+    },
+    {
+        "nome": "tipoRenovacao",
+        "rotulo": "Tipo de renovação"
+    },
+    {
+        "nome": "dataAvisoPrevio",
+        "rotulo": "Data do aviso prévio"
+    },
+    {
+        "nome": "dataRenovacao",
+        "rotulo": "Data de renovação"
+    },
+    {
+        "nome": "observacao",
+        "rotulo": "Observações"
+    },
+    {
+        "nome": "servico",
+        "rotulo": "Serviço"
+    },
+    {
+        "nome": "termosEspeciais",
+        "rotulo": "Termos especiais"
+    },
+    {
+        "nome": "dataAssinatura",
+        "rotulo": "Data de assinatura"
+    },
+    {
+        "nome": "motivoEncerramento",
+        "rotulo": "Motivo do encerramento"
+    },
+    {
+        "nome": "tipoEncerramento",
+        "rotulo": "Tipo de encerramento"
+    },
+    {
+        "nome": "listaContasReceberPagarContratoStr",
+        "rotulo": "Lista de contas a receber/pagar somente do Contrato"
+    },
+    {
+        "nome": "valorReajustado",
+        "rotulo": "Valor reajustado"
+    },
+    {
+        "nome": "valorHora",
+        "rotulo": "Valor da hora"
+    },
+    {
+        "nome": "numero",
+        "rotulo": "Número"
+    },
+    {
+        "nome": "localizacaoFisica",
+        "rotulo": "Localização física"
+    },
+    {
+        "nome": "moedaValorHora",
+        "rotulo": "Moeda do valor da hora"
+    },
+    {
+        "nome": "situacao",
+        "rotulo": "Situação"
+    },
+    {
+        "nome": "tipoAcao",
+        "rotulo": "Tipo de ação"
+    },
+    {
+        "nome": "contratado.nome",
+        "rotulo": "Contratado"
+    },
+    {
+        "nome": "proprietario.nome",
+        "rotulo": "Responsável"
+    },
+    {
+        "nome": "nota",
+        "rotulo": "Avaliação"
+    },
+    {
+        "nome": "moedaValorReajustado",
+        "rotulo": "Moeda do valor reajustado"
+    },
+    {
+        "nome": "aditivosStr",
+        "rotulo": "Lista de aditivos"
+    },
+    {
+        "nome": "boletosEmAbertoStr",
+        "rotulo": "Lista de boletos em aberto"
+    },
+    {
+        "nome": "prazo",
+        "rotulo": "Dias para vencimento"
+    },
+    {
+        "nome": "termosStr",
+        "rotulo": "Lista de termos de rerratificação"
+    },
+    {
+        "nome": "valorPorExtenso",
+        "rotulo": "Valor por extenso"
+    },
+    {
+        "nome": "tags",
+        "rotulo": "Tags"
+    },
+    {
+        "nome": "listaMovimentosContratoStr",
+        "rotulo": "Lista de lançamentos em conta"
+    },
+    {
+        "nome": "particular",
+        "rotulo": "Particular"
+    },
+    {
+        "nome": "listaDocumentosStr",
+        "rotulo": "Lista de Documentos (GED)"
+    },
+    {
+        "nome": "tipo",
+        "rotulo": "Tipo de contrato"
+    },
+    {
+        "nome": "tipoPagamento",
+        "rotulo": "Tipo de pagamento"
+    },
+    {
+        "nome": "contratante.nome",
+        "rotulo": "Contratante"
+    },
+    {
+        "nome": "ultimoDocumentoStr",
+        "rotulo": "Último documento (GED)"
+    },
+    {
+        "nome": "processo.pasta",
+        "rotulo": "Processo principal"
+    },
+    {
+        "nome": "grupoUsuarioId",
+        "rotulo": "Grupo responsável"
+    },
+    {
+        "nome": "linkRegistro",
+        "rotulo": "Link para Contrato"
+    },
+    {
+        "nome": "dataCadastro",
+        "rotulo": "Data de cadastro"
+    },
+    {
+        "nome": "alteradoPor.nome",
+        "rotulo": "Alterado por"
+    },
+    {
+        "nome": "dataAlteracao",
+        "rotulo": "Data da última modificação (sistema)"
+    },
+    {
+        "nome": "criadoPor.nome",
+        "rotulo": "Criado por"
+    },
+    {
+        "nome": "observacaoEncerramento",
+        "rotulo": "Observações do encerramento"
+    },
+    {
+        "nome": "listaDocumentosGoogleDriveStr",
+        "rotulo": "Lista de documentos Google Drive"
+    },
+    {
+        "nome": "listaContasReceberPagarStr",
+        "rotulo": "Lista de contas a receber/pagar"
+    },
+    {
+        "nome": "regraNovoRegistroId",
+        "rotulo": "Regra novo registro"
+    }
+]

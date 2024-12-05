@@ -1,0 +1,202 @@
+[
+    {
+        "nome": "ordemServico.numero",
+        "rotulo": "Ordem de Serviço"
+    },
+    {
+        "nome": "dataFaturado",
+        "rotulo": "Data do faturamento"
+    },
+    {
+        "nome": "processo.pasta",
+        "rotulo": "Processo"
+    },
+    {
+        "nome": "particular",
+        "rotulo": "Particular"
+    },
+    {
+        "nome": "grupoUsuarioId",
+        "rotulo": "Grupo responsável"
+    },
+    {
+        "nome": "assunto",
+        "rotulo": "Assunto"
+    },
+    {
+        "nome": "subAssunto",
+        "rotulo": "Sub-Assunto"
+    },
+    {
+        "nome": "relativoa",
+        "rotulo": "Relativo a"
+    },
+    {
+        "nome": "contasReceberPagar.descricao",
+        "rotulo": "Contas a receber/pagar"
+    },
+    {
+        "nome": "processo.cliente.nome",
+        "rotulo": "Cliente do processo"
+    },
+    {
+        "nome": "caso.numeroCaso",
+        "rotulo": "Caso"
+    },
+    {
+        "nome": "valorHora",
+        "rotulo": "Valor da hora"
+    },
+    {
+        "nome": "data",
+        "rotulo": "Data"
+    },
+    {
+        "nome": "timeCronometro",
+        "rotulo": "Time cronômetro"
+    },
+    {
+        "nome": "horaInicial",
+        "rotulo": "Hora inicial"
+    },
+    {
+        "nome": "totalCronometro",
+        "rotulo": "Total cronômetro (minutos)"
+    },
+    {
+        "nome": "pessoa.nome",
+        "rotulo": "Pessoa"
+    },
+    {
+        "nome": "atividade.assunto",
+        "rotulo": "Atividade"
+    },
+    {
+        "nome": "contrato.numero",
+        "rotulo": "Contrato"
+    },
+    {
+        "nome": "horaTrabalhadaAprovada.observacao",
+        "rotulo": "Motivo na aprovação"
+    },
+    {
+        "nome": "horaTrabalhadaAprovada.valor",
+        "rotulo": "Valor aprovado"
+    },
+    {
+        "nome": "horaTrabalhadaAprovada.proprietario.nome",
+        "rotulo": "Responsável pela aprovação"
+    },
+    {
+        "nome": "totalHoraTrabalhada",
+        "rotulo": "Horas trabalhadas"
+    },
+    {
+        "nome": "proprietario.nome",
+        "rotulo": "Atribuído a"
+    },
+    {
+        "nome": "marca.numeroProcesso",
+        "rotulo": "Marcas e patentes"
+    },
+    {
+        "nome": "horaTrabalhadaAprovada.data",
+        "rotulo": "Data da aprovação"
+    },
+    {
+        "nome": "dataCadastro",
+        "rotulo": "Data de cadastro"
+    },
+    {
+        "nome": "procuracao.numero",
+        "rotulo": "Procuração"
+    },
+    {
+        "nome": "horaTrabalhadaAprovada.aprovado",
+        "rotulo": "Aprovado"
+    },
+    {
+        "nome": "grupoUsuario.nomeUsuarios",
+        "rotulo": "Usuários do grupo responsável"
+    },
+    {
+        "nome": "horaTrabalhadaAprovadaId",
+        "rotulo": "ID da hora aprovada"
+    },
+    {
+        "nome": "horaFinal",
+        "rotulo": "Hora final"
+    },
+    {
+        "nome": "tags",
+        "rotulo": "Tags"
+    },
+    {
+        "nome": "valorHoraPor",
+        "rotulo": "Valor da hora por"
+    },
+    {
+        "nome": "horaTrabalhadaAprovada.duracao",
+        "rotulo": "Duração aprovada"
+    },
+    {
+        "nome": "alteradoPor.nome",
+        "rotulo": "Alterado por"
+    },
+    {
+        "nome": "criadoPor.nome",
+        "rotulo": "Criado por"
+    },
+    {
+        "nome": "linkRegistro",
+        "rotulo": "Link para Horas trabalhadas"
+    },
+    {
+        "nome": "dataAlteracao",
+        "rotulo": "Data da última modificação (sistema)"
+    },
+    {
+        "nome": "horaOciosa",
+        "rotulo": "Horas ociosas"
+    },
+    {
+        "nome": "totalHoras",
+        "rotulo": "Total de horas"
+    },
+    {
+        "nome": "status",
+        "rotulo": "Status"
+    },
+    {
+        "nome": "usuarioAprovar.nome",
+        "rotulo": "Enviar solicitação de aprovação para"
+    },
+    {
+        "nome": "observacao",
+        "rotulo": "Descrição"
+    },
+    {
+        "nome": "statusCronometro",
+        "rotulo": "Status do cronômetro"
+    },
+    {
+        "nome": "codigoHoraTrabalhada",
+        "rotulo": "Código da hora trabalhada"
+    },
+    {
+        "nome": "grupoValorHoraId",
+        "rotulo": "Grupo de valores de hora"
+    },
+    {
+        "nome": "tipo",
+        "rotulo": "Tipo"
+    },
+    {
+        "nome": "valorTotalOriginal",
+        "rotulo": "Valor total"
+    },
+    {
+        "nome": "duracaoOriginal",
+        "rotulo": "Duração"
+    }
+]

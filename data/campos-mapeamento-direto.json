@@ -1,0 +1,28 @@
+{
+  "localidade_fase_atual": "FaseProcesso.faseAtual.localidade",
+  "cliente": {
+    "nome": "PessoaFisica.nome",
+    "cpf": "PessoaFisica.cpf",
+    "pis": "PessoaFisica.pis", 
+    "data_nascimento": "PessoaFisica.dataNascimento",
+    "nome_mae": "PessoaFisica.nomeMae"
+  },
+  "tipo_acao": "Processo.tipoAcao",
+  "periodos_especiais": [
+    {
+      "data_inicio": "PedidoProcesso.data_inicio_pedido",
+      "data_final": "PedidoProcesso.data_final_pedido",
+      "empresa": "PedidoProcesso.empresa",
+      "funcao": "PedidoProcesso.funcao",
+      "agentes_nocivos": "PedidoProcesso.agentes_nocivos",
+      "provas": "PedidoProcesso.provas_aposentadoria"
+    }
+  ],
+  "tempo_total": "Processo.tempo_total",
+  "rmi": "Processo.rmi",
+  "data_atual": "SYSTEM.DATE",
+  "advogado": {
+    "nome": "Usuario.nome",
+    "oab": "Usuario.nomeUsuario"
+  }
+}

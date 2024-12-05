@@ -1,0 +1,178 @@
+[
+    {
+        "nome": "pais",
+        "rotulo": "País"
+    },
+    {
+        "nome": "nomeUsuario",
+        "rotulo": "Nome da assinatura"
+    },
+    {
+        "nome": "notificarPorEmail",
+        "rotulo": "Enviar notificação para o usuário"
+    },
+    {
+        "nome": "dataCadastro",
+        "rotulo": "Data de cadastro"
+    },
+    {
+        "nome": "criadoPor.nome",
+        "rotulo": "Criado por (nome)"
+    },
+    {
+        "nome": "telefoneResidencial",
+        "rotulo": "Telefone residencial"
+    },
+    {
+        "nome": "dataAlteracao",
+        "rotulo": "Última modificação (sistema)"
+    },
+    {
+        "nome": "departamento",
+        "rotulo": "Departamento"
+    },
+    {
+        "nome": "cep",
+        "rotulo": "Cep"
+    },
+    {
+        "nome": "endereco",
+        "rotulo": "Endereço"
+    },
+    {
+        "nome": "bairro",
+        "rotulo": "Bairro"
+    },
+    {
+        "nome": "estado",
+        "rotulo": "Estado"
+    },
+    {
+        "nome": "outroEmail",
+        "rotulo": "Outro email"
+    },
+    {
+        "nome": "outroTelefone",
+        "rotulo": "Outro telefone"
+    },
+    {
+        "nome": "clienteSistema.pessoa.nome",
+        "rotulo": "Cliente"
+    },
+    {
+        "nome": "perfilAcessoId",
+        "rotulo": "Perfil"
+    },
+    {
+        "nome": "valorHora",
+        "rotulo": "Valor da hora"
+    },
+    {
+        "nome": "dataAlteracaoUsuario",
+        "rotulo": "Última modificação"
+    },
+    {
+        "nome": "imagemUrl",
+        "rotulo": "Imagem do usuário"
+    },
+    {
+        "nome": "dataInicialFerias",
+        "rotulo": "Data de início das férias"
+    },
+    {
+        "nome": "gerarNovaSenha",
+        "rotulo": "Gerar nova senha e enviar notificação"
+    },
+    {
+        "nome": "email",
+        "rotulo": "Nome do usuário (email)"
+    },
+    {
+        "nome": "telefone",
+        "rotulo": "Telefone comercial"
+    },
+    {
+        "nome": "divisao",
+        "rotulo": "Divisão"
+    },
+    {
+        "nome": "anotacoes",
+        "rotulo": "Anotações"
+    },
+    {
+        "nome": "usuarioUnidade",
+        "rotulo": "Unidades do usuário"
+    },
+    {
+        "nome": "corFundo",
+        "rotulo": "Cor de fundo"
+    },
+    {
+        "nome": "ativo",
+        "rotulo": "Ativo"
+    },
+    {
+        "nome": "nome",
+        "rotulo": "Nome"
+    },
+    {
+        "nome": "celular",
+        "rotulo": "Celular"
+    },
+    {
+        "nome": "ramal",
+        "rotulo": "Ramal"
+    },
+    {
+        "nome": "dataFinalFerias",
+        "rotulo": "Data final das férias"
+    },
+    {
+        "nome": "restringirAcessoPeloIp",
+        "rotulo": "Restringir o acesso por IP fixo"
+    },
+    {
+        "nome": "assinatura",
+        "rotulo": "Assinatura"
+    },
+    {
+        "nome": "fax",
+        "rotulo": "Fax"
+    },
+    {
+        "nome": "ferias",
+        "rotulo": "Usuário em férias"
+    },
+    {
+        "nome": "alteradoPor.nome",
+        "rotulo": "Alterar por (nome)"
+    },
+    {
+        "nome": "senha",
+        "rotulo": "Senha"
+    },
+    {
+        "nome": "confirmacaoSenha",
+        "rotulo": "Confirmaçao da Senha"
+    },
+    {
+        "nome": "cidade",
+        "rotulo": "Cidade"
+    },
+    {
+        "nome": "moedaValorHora",
+        "rotulo": "Moeda do valor da hora"
+    },
+    {
+        "nome": "aprovacaoCustas",
+        "rotulo": "Usuário habilitado para aprovação de custas"
+    },
+    {
+        "nome": "pessoa.nome",
+        "rotulo": "Pessoa"
+    },
+    {
+        "nome": "numeroAtividadesUsuarioDia",
+        "rotulo": "Alerta para quantidade de Compromissos por usuário por dia"
+    }
+]

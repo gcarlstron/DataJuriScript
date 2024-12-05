@@ -1,0 +1,166 @@
+[
+    {
+        "nome": "data",
+        "rotulo": "Data"
+    },
+    {
+        "nome": "listaDocumentos",
+        "rotulo": "Lista de documentos (links)"
+    },
+    {
+        "nome": "marca.numeroProcesso",
+        "rotulo": "Marcas e patentes"
+    },
+    {
+        "nome": "contrato.numero",
+        "rotulo": "Contrato"
+    },
+    {
+        "nome": "dataPagamento",
+        "rotulo": "Data de pagamento"
+    },
+    {
+        "nome": "dataAlteracao",
+        "rotulo": "Data da última modificação (sistema)"
+    },
+    {
+        "nome": "situacaoAprovacao",
+        "rotulo": "Situação da aprovação"
+    },
+    {
+        "nome": "processo.faseAtual.orgao.nome",
+        "rotulo": "Orgão da fase atual - Processo"
+    },
+    {
+        "nome": "alteradoPor.nome",
+        "rotulo": "Alterado por"
+    },
+    {
+        "nome": "pago",
+        "rotulo": "Pago"
+    },
+    {
+        "nome": "caso.numeroCaso",
+        "rotulo": "Caso"
+    },
+    {
+        "nome": "valorPorExtenso",
+        "rotulo": "Valor por extenso"
+    },
+    {
+        "nome": "atividade.assunto",
+        "rotulo": "Atividade (assunto)"
+    },
+    {
+        "nome": "relativoa",
+        "rotulo": "Relativo a"
+    },
+    {
+        "nome": "processo.adverso.nome",
+        "rotulo": "Nome do adverso do processo"
+    },
+    {
+        "nome": "processo.faseAtual.numero",
+        "rotulo": "Número da Fase atual do processo"
+    },
+    {
+        "nome": "imagemAprovacaoCustas",
+        "rotulo": "Situação da aprovação (icone)"
+    },
+    {
+        "nome": "pessoa.empresaGrupo.nome",
+        "rotulo": "Grupo empresarial da pessoa"
+    },
+    {
+        "nome": "ordemServico.numero",
+        "rotulo": "Ordem de Serviço"
+    },
+    {
+        "nome": "listaDocumentosPublico",
+        "rotulo": "Lista de documentos (com link público)"
+    },
+    {
+        "nome": "particular",
+        "rotulo": "Particular"
+    },
+    {
+        "nome": "proprietario.nome",
+        "rotulo": "Responsável"
+    },
+    {
+        "nome": "planoConta.nomeCompleto",
+        "rotulo": "Plano de Conta"
+    },
+    {
+        "nome": "listaDocumentosGoogleDriveStr",
+        "rotulo": "Lista de documentos Google Drive"
+    },
+    {
+        "nome": "listaAprovacao",
+        "rotulo": "Lista de aprovações"
+    },
+    {
+        "nome": "movimentoId",
+        "rotulo": "Lançamento em conta"
+    },
+    {
+        "nome": "descricao",
+        "rotulo": "Descrição"
+    },
+    {
+        "nome": "lancaMovimentoCliente",
+        "rotulo": "Lançar este movimento na conta corrente do cliente"
+    },
+    {
+        "nome": "processo.pasta",
+        "rotulo": "Processo"
+    },
+    {
+        "nome": "valor",
+        "rotulo": "Valor"
+    },
+    {
+        "nome": "linkRegistro",
+        "rotulo": "Link para Custas/Despesas"
+    },
+    {
+        "nome": "criadoPor.nome",
+        "rotulo": "Criado por"
+    },
+    {
+        "nome": "tipo",
+        "rotulo": "Tipo"
+    },
+    {
+        "nome": "observacao",
+        "rotulo": "Observações"
+    },
+    {
+        "nome": "contasReceberPagar.descricao",
+        "rotulo": "Contas a receber/pagar"
+    },
+    {
+        "nome": "numeroDocumento",
+        "rotulo": "Número do Documento"
+    },
+    {
+        "nome": "dataCadastro",
+        "rotulo": "Data de cadastro"
+    },
+    {
+        "nome": "planoConta.exigirAprovacaoCustas",
+        "rotulo": "Exigir a aprovação de custas (Plano de conta)"
+    },
+    {
+        "nome": "centroCustoId",
+        "rotulo": "Centro de custo"
+    },
+    {
+        "nome": "regraNovoRegistroId",
+        "rotulo": "Regra novo registro"
+    },
+    {
+        "nome": "pessoa.nome",
+        "rotulo": "Pessoa"
+    }
+]
