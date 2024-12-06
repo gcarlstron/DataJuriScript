@@ -1,5 +1,6 @@
 import http.client
 import json
+import locale
 import os
 from datetime import datetime
 from typing import Dict, Any
@@ -34,6 +35,17 @@ class DataJuriClient:
             return json.loads(data)
         finally:
             conn.close()
+
+    def format_date(self, date_str: str) -> str:
+        locale.setlocale(locale.LC_TIME, 'pt_BR.UTF-8')
+
+        data = datetime.strptime(date_str, '%Y-%m-%d')
+
+        dia = data.strftime('%d')
+        mes = data.strftime('%B').lower()
+        ano = data.strftime('%Y')
+
+        return f"{dia} de {mes} de {ano}"
 
     def get_process(self, process_id: str) -> Dict[str, Any]:
         """Busca dados do processo"""
@@ -92,6 +104,7 @@ class DataJuriClient:
         # Busca dados dos pedidos
         requests_data = self.get_process_request(process_id)
 
+        today = self.format_date(datetime.now().strftime('%Y-%m-%d'))
         # Monta o template
         template = {
             "ProcessoId": process_id,
@@ -117,7 +130,7 @@ class DataJuriClient:
             ],
             "tempo_total": process_data.get('rows')[0]['tempo_total'],
             "rmi": process_data.get('rows')[0]['rmi'],
-            "data_atual": datetime.now().strftime('%Y-%m-%d'),
+            "data_atual": today,
             "advogado": {
                 "nome": os.getenv('DATA_JURI_SCRIPT:ADVOGADO'),
                 "oab": os.getenv('DATA_JURI_SCRIPT:OAB')
