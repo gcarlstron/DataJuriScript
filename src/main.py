@@ -1,6 +1,5 @@
 import json
 from dotenv import load_dotenv
-from src import GerarDocx as g
 from src.DataJuriAuthenticate import DataJuriAuthenticate
 from src.DataJuriClient import DataJuriClient
 from src.GerarDocx import GerarDocx
