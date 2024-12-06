@@ -1,9 +1,10 @@
 from typing import List, Dict, Any, Optional
 import markdown
 from bs4 import BeautifulSoup
-from docx.enum.text import WD_ALIGN_PARAGRAPH
-from docx.shared import RGBColor, Pt
+from docx.shared import RGBColor, Pt, Cm
 from docx import Document
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.oxml import OxmlElement, ns
 import re
 from dataclasses import dataclass
 
@@ -11,26 +12,48 @@ from dataclasses import dataclass
 @dataclass
 class DocumentStyles:
     heading_styles: Dict[str, str] = None
-    link_color: RGBColor = RGBColor(0, 0, 255)  # Default blue for links
+    link_color: RGBColor = RGBColor(0, 0, 255)
     table_style: str = 'Table Grid'
     default_font: str = 'Cambria'
-    heading_color: RGBColor = RGBColor(0, 0, 0)  # Black color for headings
+    heading_color: RGBColor = RGBColor(0, 0, 0)
     default_font_size: Pt = Pt(11)
+    italic_left_indent: float = Cm(0.5)
+    header_image: str = "../img/logo.jpg"
+    image_width: float = Cm(5)
 
 
 class GenerateDocx:
     def __init__(self, styles: Optional[DocumentStyles] = None):
         self.styles = styles or DocumentStyles()
 
+    def _create_element(self, name: str) -> OxmlElement:
+        return OxmlElement(name, xmlns=ns.w)
+
+    def _create_header_with_image(self, doc: Document) -> None:
+        if not self.styles.header_image:
+            return
+
+        section = doc.sections[0]
+
+        header = section.header
+
+        header_para = header.paragraphs[0] if header.paragraphs else header.add_paragraph()
+        header_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+
+        run = header_para.add_run()
+        run.add_picture(self.styles.header_image, width=self.styles.image_width)
+
     def _clean_html_tags(self, text: str) -> str:
         """Remove HTML tags from text while preserving content."""
         return re.sub('<[^>]*>', '', text)
 
     def _apply_default_font_style(self, run) -> None:
+        """Apply default font styling to a run."""
         run.font.name = self.styles.default_font
         run.font.size = self.styles.default_font_size
 
     def add_table_docx(self, doc: Document, table_data: Dict[str, str]) -> None:
+        """Add a table to the document at the [[ tabela ]] marker."""
         for para in doc.paragraphs:
             if '[[ tabela ]]' not in para.text:
                 continue
@@ -39,33 +62,28 @@ class GenerateDocx:
             table = doc.add_table(rows=1, cols=2)
             table.style = self.styles.table_style
 
-            # Set headers
             headers = ['Campo', 'Valor']
             for i, header in enumerate(headers):
                 cell = table.cell(0, i)
                 cell.text = header
-                # Apply font style to table headers
                 for paragraph in cell.paragraphs:
                     for run in paragraph.runs:
                         self._apply_default_font_style(run)
 
-            # Add data rows
             for i, (key, value) in enumerate(table_data.items(), start=1):
                 row = table.add_row()
                 row.cells[0].text = key
                 row.cells[1].text = self._clean_html_tags(value)
-                # Apply font style to table cells
                 for cell in row.cells:
                     for paragraph in cell.paragraphs:
                         for run in paragraph.runs:
                             self._apply_default_font_style(run)
-
-            doc.add_paragraph()
             break
 
     def _process_paragraph_element(self, doc: Document, element: BeautifulSoup) -> None:
-        """Process a paragraph element and its formatting."""
         paragraph = doc.add_paragraph()
+        has_italic = False
+
         for child in element.children:
             if isinstance(child, str):
                 run = paragraph.add_run(child)
@@ -79,17 +97,21 @@ class GenerateDocx:
                 run.bold = True
             elif child.name == 'em':
                 run.italic = True
+                has_italic = True
             elif child.name == 'a':
                 run.font.color.rgb = self.styles.link_color
                 run.underline = True
 
+        if has_italic:
+            paragraph.paragraph_format.left_indent = self.styles.italic_left_indent
+
     def _format_heading(self, paragraph, text: str) -> None:
-        run = paragraph.add_run(text.upper())  # Convert to uppercase
+        run = paragraph.add_run(text.upper())
         run.font.name = self.styles.default_font
         run.font.size = self.styles.default_font_size
         run.font.color.rgb = self.styles.heading_color
-        paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
         run.underline = True
+        paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
     def convert_markdown_to_docx(
             self,
@@ -97,11 +119,13 @@ class GenerateDocx:
             output_file: str,
             table_data: List[Dict[str, str]]
     ) -> None:
-
         with open(markdown_file, 'r', encoding='utf-8') as file:
             content = file.read()
 
         doc = Document()
+
+        self._create_header_with_image(doc)
+
         html = markdown.markdown(content)
         soup = BeautifulSoup(html, 'html.parser')
         table_index = 0
