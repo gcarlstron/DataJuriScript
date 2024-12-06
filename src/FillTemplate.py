@@ -6,6 +6,8 @@ def create_md_file(documento: str, dados: dict[str, Any]):
     with open(documento, 'r', encoding='utf-8') as file:
         template = file.read()
 
+    process_id = dados.get('ProcessoId')
+
     replacements = {
         '[localidade_fase_atual]': dados['localidade_fase_atual'],
         '[cliente]': dados['cliente']['nome'],
@@ -29,7 +31,7 @@ def create_md_file(documento: str, dados: dict[str, Any]):
     data_table = []
     for period in dados['periodos_especiais']:
         tables += "[[ tabela ]]\n\n"
-        period['agentes_nocivos'] = ", ".join(period['agentes_nocivos'])
+        period['agentes_nocivos'] = '\n'.join(period['agentes_nocivos'])
         data_table.append(period)
 
     content = content.replace(
@@ -42,8 +44,8 @@ def create_md_file(documento: str, dados: dict[str, Any]):
         tables)
 
     # Generate filename with current date
-    today = datetime.now().strftime('%Y-%m-%d')
-    filename = f'retirement-request-template_{today}.md'
+    today = datetime.now().strftime('%Y-%m-%d-%H-%M')
+    filename = f'{process_id}_{today}.md'
 
     with open(filename, 'w', encoding='utf-8') as file:
         file.write(content)

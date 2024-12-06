@@ -2,6 +2,7 @@ import markdown
 from bs4 import BeautifulSoup
 from docx.shared import RGBColor
 from docx import Document
+import re
 
 
 class GenerateDocx:
@@ -11,22 +12,23 @@ class GenerateDocx:
             if '[[ tabela ]]' in para.text:
 
                 para.text = para.text.replace('[[ tabela ]]', '')
-                tabela = doc.add_table(rows=len(table_data) + 1, cols=2)
+                tabela = doc.add_table(rows=1, cols=2)
                 tabela.style = 'Table Grid'
 
                 headers = ['Campo', 'Valor']
                 for i, header in enumerate(headers):
                     tabela.cell(0, i).text = header
 
-                for i, data_dict in enumerate(table_data):
-                    for k, v in data_dict.items():
-                        tabela.cell(i+1, 0).text = k
-                        tabela.cell(i+1, 1).text = v
+                i = 1
+                for k, v in table_data.items():
+                    tabela.add_row()
+                    tabela.cell(i, 0).text = k
+                    tabela.cell(i, 1).text = re.sub('<[^>]*>', '', v)
+                    i += 1
 
-                tabela.add_row()
                 break
 
-    def convert_markdown_to_docx(self, markdown_file, output_file, dados_tabela, styles=None):
+    def convert_markdown_to_docx(self, markdown_file, output_file, table_data, styles=None):
 
         with open(markdown_file, 'r', encoding='utf-8') as file:
             documento = file.read()
@@ -34,6 +36,7 @@ class GenerateDocx:
         doc = Document()
         html = markdown.markdown(documento)
         soup = BeautifulSoup(html, 'html.parser')
+        table_index = 0
 
         for element in soup.find_all(['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol']):
             if element.name.startswith('h'):
@@ -42,10 +45,11 @@ class GenerateDocx:
             elif element.name == 'p':
                 if '[[ tabela ]]' in element.text:
                     doc.add_paragraph(element.text)
-                    self.add_table_docx(doc, dados_tabela)
+                    self.add_table_docx(doc, table_data[table_index])
+                    table_index += 1
                 else:
+                    p = doc.add_paragraph()
                     for child in element.children:
-                        p = doc.add_paragraph()
                         if isinstance(child, str):
                             run = p.add_run(child)
                         else:

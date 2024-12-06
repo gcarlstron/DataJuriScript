@@ -25,7 +25,7 @@ def main():
         
         # Salva o resultado em um arquivo
         with open('../template/dados_template.json', 'w', encoding='utf-8') as f:
-            json.dump(dados, f, ensure_ascii=False, indent=2)
+            json.dump(template_data, f, ensure_ascii=False, indent=2)
             
         print("Template preenchido com sucesso!")
         print("\nDados obtidos:")
