@@ -113,12 +113,12 @@ class DataJuriClient:
             "tipo_acao": processo_data.get('rows')[0]['tipoAcao'],
             "periodos_especiais": [
                 {
-                    "data_inicio": pedido.get('data_inicio_pedido'),
-                    "data_final": pedido.get('data_final_pedido'),
-                    "empresa": pedido.get('empresa'),
-                    "funcao": pedido.get('funcao'),
+                    "data_inicio": pedido.get('data_inicio_pedido', ''),
+                    "data_final": pedido.get('data_final_pedido', ''),
+                    "empresa": pedido.get('empresa', ''),
+                    "funcao": pedido.get('funcao', ''),
                     "agentes_nocivos": [agente for agente in (pedido['agentes_nocivos'].split('<br/>'))],
-                    "provas": pedido.get('provas_aposentadoria')
+                    "provas": pedido.get('provas_aposentadoria', '')
                 }
                 for pedido in (pedidos_data.get('rows', []))
             ],
