@@ -1,5 +1,4 @@
 import markdown
-from io import BytesIO
 from bs4 import BeautifulSoup
 from docx.shared import RGBColor
 from docx import Document
