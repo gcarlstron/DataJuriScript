@@ -110,8 +110,8 @@ class DataJuriClient:
                     "data_final": pedido.get('data_final_pedido', ''),
                     "empresa": pedido.get('empresa', ''),
                     "funcao": pedido.get('funcao', ''),
-                    "agentes_nocivos": [agente for agente in (pedido.get('agentes_nocivos','').split('<br/>'))],
-                    "provas": [provas for provas in (pedido.get('provas_aposentadoria', '').split('<br/>'))]
+                    "agentes_nocivos": [agente for agente in (pedido.get('agentes_nocivos', '').split('<br/>'))],
+                    "provas": [provas for provas in (pedido.get('provas', '').split('<br/>'))]
                 }
                 for pedido in (requests_data.get('rows', []))
             ],
