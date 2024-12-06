@@ -59,7 +59,7 @@ class GenerateDocx:
                             elif child.name == 'em':
                                 run.italic = True
                             elif child.name == 'a':
-                                run.font.color.rgb = RGBColor(0, 0, 255)
+                                run.font.color.rgb = RGBColor(255, 255, 255)
                                 run.underline = True
             elif element.name in ['ul', 'ol']:
                 for li in element.find_all('li'):
