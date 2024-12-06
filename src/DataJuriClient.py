@@ -62,7 +62,7 @@ class DataJuriClient:
     def get_process_request(self, processo_id: str) -> Dict[str, Any]:
         """Busca dados dos pedidos do processo"""
         params = {
-            'campos': 'data_inicio_pedido,data_final_pedido,empresa,funcao,agentes_nocivos,provas_aposentadoria',
+            'campos': 'data_inicio_pedido,data_final_pedido,empresa,funcao,agentes_nocivos,provas',
             'criterio': f'processoId | igual a | {processo_id}'
         }
         return self._make_request('/v1/entidades/PedidoProcesso', params)
@@ -110,8 +110,8 @@ class DataJuriClient:
                     "data_final": pedido.get('data_final_pedido', ''),
                     "empresa": pedido.get('empresa', ''),
                     "funcao": pedido.get('funcao', ''),
-                    "agentes_nocivos": [agente for agente in (pedido['agentes_nocivos'].split('<br/>'))],
-                    "provas": pedido.get('provas_aposentadoria', '')
+                    "agentes_nocivos": [agente for agente in (pedido.get('agentes_nocivos','').split('<br/>'))],
+                    "provas": [provas for provas in (pedido.get('provas_aposentadoria', '').split('<br/>'))]
                 }
                 for pedido in (requests_data.get('rows', []))
             ],

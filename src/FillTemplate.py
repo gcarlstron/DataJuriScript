@@ -32,6 +32,7 @@ def create_md_file(documento: str, dados: dict[str, Any]):
     for period in dados['periodos_especiais']:
         tables += "[[ tabela ]]\n\n"
         period['agentes_nocivos'] = '\n'.join(period['agentes_nocivos'])
+        period['provas'] = '\n'.join(period['provas'])
         data_table.append(period)
 
     content = content.replace(
