@@ -23,8 +23,8 @@ def main():
         template_data = client.fill_template(process_id)
         document_name, table_data = create_md_file(f'{template_folder}/retirement-request-template.md', template_data)
         docx = GenerateDocx()
-        docx.convert_markdown_to_docx(f'{documents_folder}/{document_name}',
-                                      f'{documents_folder}{document_name.replace(".md", ".docx")}', table_data)
+        docx.convert_markdown_to_docx(f'{document_name}',
+                                      f'{documents_folder}/{document_name.replace(".md", ".docx")}', table_data)
         
         # Salva o resultado em um arquivo
         with open('../template/dados_template.json', 'w', encoding='utf-8') as f:
