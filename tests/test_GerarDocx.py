@@ -4,7 +4,7 @@ from docx.shared import RGBColor
 from docx import Document
 
 
-class GerarDocx:
+class TestGerarDocx:
 
     def adicionar_tabela_docx(self, doc, dados_tabela: dict[str, str]):
         for para in doc.paragraphs:
@@ -63,3 +63,13 @@ class GerarDocx:
                     doc.add_paragraph(li.text, style=estilo)
 
         doc.save(output_file)
+
+
+if __name__ == "__main__":
+    mdfile(test.md)
+    doc = Document()
+    doc.add_paragraph("[[ tabela ]]")
+    dados = [{'data_inicio': '15/06/1997', 'data_final': '01/08/2000', 'empresa': '<a  href="#/lista/PessoaJuridica/12173"  >Viação Aérea São Paulo S/A - VASP</a>', 'funcao': 'Comissária de Bordo', 'agentes_nocivos': 'Enquadramento profissional (cód. 2.4.1 do Decreto 53.831/64),  Ruído (cód. 2.0.1 Dec. 3.048/99),  Radiação ionizante (cód. 2.0.3 Dec. 3.048/99 e Grupo 1 LINACH),  Risco à integridade física (art. 57 Lei 8.213/91 c/c Súmula 198/TFR),  Vibrações (cód. 2.0.2 Dec. 3.048/99),  Penosidade (art. 57 Lei 8.213/91 c/c Súmula 198/TFR), ', 'provas': ''}]
+    test = TestGerarDocx()
+    test.adicionar_tabela_docx(doc, dados)
+    test.convert_markdown_to_docx('test.md', 'test.docx', dados)

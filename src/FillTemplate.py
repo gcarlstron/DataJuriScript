@@ -2,7 +2,7 @@ from datetime import datetime
 from typing import Any
 
 
-def arquivo_md(documento: str, dados: dict[str, Any]):
+def create_md_file(documento: str, dados: dict[str, Any]):
     with open(documento, 'r', encoding='utf-8') as file:
         template = file.read()
 

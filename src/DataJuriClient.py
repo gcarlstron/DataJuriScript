@@ -8,13 +8,6 @@ from urllib.parse import urlencode
 
 class DataJuriClient:
     def __init__(self, host: str, token: str):
-        """
-        Inicializa o cliente com host e token
-
-        Args:
-            host: Hostname da API (ex: 'api.datajuri.com.br')
-            token: Token de autenticação
-        """
         self.host = host
         self.token = token
         self.headers = {
@@ -42,11 +35,11 @@ class DataJuriClient:
         finally:
             conn.close()
 
-    def get_processo(self, processo_id: str) -> Dict[str, Any]:
+    def get_process(self, process_id: str) -> Dict[str, Any]:
         """Busca dados do processo"""
         params = {
             'campos': 'tipoAcao,tempo_total,rmi,cliente.nome,advogadoCliente.nome,faseAtual.localidade',
-            'criterio': f'id | igual a | {processo_id}'
+            'criterio': f'id | igual a | {process_id}'
         }
         return self._make_request('/v1/entidades/Processo', params)
 
@@ -58,7 +51,7 @@ class DataJuriClient:
         }
         return self._make_request('/v1/entidades/PessoaFisica', params)
 
-    def get_fase_processo(self, processo_id: str) -> Dict[str, Any]:
+    def get_process_stage(self, processo_id: str) -> Dict[str, Any]:
         """Busca dados da fase do processo"""
         params = {
             'campos': 'faseAtual.localidade',
@@ -66,7 +59,7 @@ class DataJuriClient:
         }
         return self._make_request('/v1/entidades/FaseProcesso', params)
 
-    def get_pedidos_processo(self, processo_id: str) -> Dict[str, Any]:
+    def get_process_request(self, processo_id: str) -> Dict[str, Any]:
         """Busca dados dos pedidos do processo"""
         params = {
             'campos': 'data_inicio_pedido,data_final_pedido,empresa,funcao,agentes_nocivos,provas_aposentadoria',
@@ -74,7 +67,7 @@ class DataJuriClient:
         }
         return self._make_request('/v1/entidades/PedidoProcesso', params)
 
-    def get_advogado(self, advogado_id: str) -> Dict[str, Any]:
+    def get_lawyer(self, advogado_id: str) -> Dict[str, Any]:
         """Busca dados do advogado"""
         params = {
             'campos': 'nome,nomeUsuario',
@@ -82,27 +75,27 @@ class DataJuriClient:
         }
         return self._make_request('/v1/entidades/Usuario', params)
 
-    def preencher_template(self, processo_id: str) -> Dict[str, Any]:
+    def fill_template(self, process_id: str) -> Dict[str, Any]:
 
         # Busca dados do processo
-        processo_data = self.get_processo(processo_id)
+        process_data = self.get_process(process_id)
 
-        if int(processo_data.get('listSize')) < 1:
-            raise Exception(f'processo {processo_id} não encontrado')
+        if int(process_data.get('listSize')) < 1:
+            raise Exception(f'processo {process_id} não encontrado')
         # Busca dados do cliente
-        client_id = processo_data.get('rows')[0]['clienteId']
+        client_id = process_data.get('rows')[0]['clienteId']
         client_data = self.get_client(client_id)
 
         if int(client_data.get('listSize')) < 1:
             raise Exception(f'cliente {client_id} não encontrado')
 
         # Busca dados dos pedidos
-        pedidos_data = self.get_pedidos_processo(processo_id)
+        requests_data = self.get_process_request(process_id)
 
         # Monta o template
         template = {
-            "ProcessoId": processo_id,
-            "localidade_fase_atual": processo_data.get('rows')[0]['faseAtual.localidade'],
+            "ProcessoId": process_id,
+            "localidade_fase_atual": process_data.get('rows')[0]['faseAtual.localidade'],
             "cliente": {
                 "nome": client_data.get('rows')[0]['nome'],
                 "cpf": client_data.get('rows')[0]['cpf'],
@@ -110,7 +103,7 @@ class DataJuriClient:
                 "data_nascimento": client_data.get('rows')[0]['dataNascimento'],
                 "nome_mae": client_data.get('rows')[0]['nomeMae']
             },
-            "tipo_acao": processo_data.get('rows')[0]['tipoAcao'],
+            "tipo_acao": process_data.get('rows')[0]['tipoAcao'],
             "periodos_especiais": [
                 {
                     "data_inicio": pedido.get('data_inicio_pedido', ''),
@@ -120,10 +113,10 @@ class DataJuriClient:
                     "agentes_nocivos": [agente for agente in (pedido['agentes_nocivos'].split('<br/>'))],
                     "provas": pedido.get('provas_aposentadoria', '')
                 }
-                for pedido in (pedidos_data.get('rows', []))
+                for pedido in (requests_data.get('rows', []))
             ],
-            "tempo_total": processo_data.get('rows')[0]['tempo_total'],
-            "rmi": processo_data.get('rows')[0]['rmi'],
+            "tempo_total": process_data.get('rows')[0]['tempo_total'],
+            "rmi": process_data.get('rows')[0]['rmi'],
             "data_atual": datetime.now().strftime('%Y-%m-%d'),
             "advogado": {
                 "nome": os.getenv('DATA_JURI_SCRIPT:ADVOGADO'),

@@ -3,6 +3,7 @@ import json
 import os
 from base64 import b64encode
 
+
 def basic_auth(client: str, secret: str) -> str:
     token = b64encode(f"{client}:{secret}".encode('utf-8')).decode("ascii")
     return f'Basic {token}'
