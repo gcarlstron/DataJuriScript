@@ -25,14 +25,12 @@ def arquivo_md(documento: str, dados: dict[str, Any]):
     for key, value in replacements.items():
         content = content.replace(key, str(value))
 
-    periods_text = ""
+    tables = ""
+    data_table = []
     for period in dados['periodos_especiais']:
-        periods_text += "| Campo | Valor |\n"
-        periods_text += "|-------|-------|\n"
-        periods_text += f"|**Período:** De| {period['data_inicio']} a {period['data_final']}|\n"
-        periods_text += f"|**Empresa:**| {period['empresa']}|\n"
-        periods_text += f"|**Função:**| {period['funcao']}|\n"
-        periods_text += f"|**Agentes nocivos:**| {', '.join(filter(None, period['agentes_nocivos']))}|\n\n"
+        tables += "[[ tabela ]]\n\n"
+        period['agentes_nocivos'] = ", ".join(period['agentes_nocivos'])
+        data_table.append(period)
 
     content = content.replace(
         "| Campo | Valor |\n"
@@ -41,7 +39,7 @@ def arquivo_md(documento: str, dados: dict[str, Any]):
         "| **Empresa:** | [empresa] |\n| **Função:** | [funcao] |\n"
         "| **Agentes nocivos:** | [agentes_nocivos] |\n"
         "| **Provas pré-constituídas:** | [provas] |\n\n",
-        periods_text)
+        tables)
 
     # Generate filename with current date
     today = datetime.now().strftime('%Y-%m-%d')
@@ -51,4 +49,4 @@ def arquivo_md(documento: str, dados: dict[str, Any]):
         file.write(content)
     print(f'Document saved as: {filename}')
 
-    return filename
+    return filename, data_table
