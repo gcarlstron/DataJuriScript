@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from DataJuriAuthenticate import DataJuriAuthenticate
 from DataJuriClient import DataJuriClient
 from main import process_document
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 
 
 def load_processes(page: int, page_size: int, process_id: str = None,
@@ -38,6 +38,8 @@ def load_processes(page: int, page_size: int, process_id: str = None,
 
 
 def main():
+    today = datetime.today()
+    MIN_DATE = date(1900, 1, 1)
     st.title("Requerimentos de Aposentadoria")
 
     # Filters
@@ -48,9 +50,9 @@ def main():
 
     with col2:
         start_date = st.date_input("Data Inicial",
-                                   value=datetime.now() - timedelta(days=30))
+                                   value=datetime.now() - timedelta(days=30), max_value=today, min_value=MIN_DATE)
         end_date = st.date_input("Data Final",
-                                 value=datetime.now())
+                                 value=datetime.now(), max_value=today, min_value=MIN_DATE)
 
     # Pagination controls
     page_size = 10
