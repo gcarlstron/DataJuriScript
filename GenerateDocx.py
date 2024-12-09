@@ -18,7 +18,7 @@ class DocumentStyles:
     heading_color: RGBColor = RGBColor(0, 0, 0)
     default_font_size: Pt = Pt(11)
     italic_left_indent: float = Cm(0.5)
-    header_image: str = "../img/logo.jpg"
+    header_image: str = "img/logo.jpg"
     image_width: float = Cm(5)
     first_line_indent: float = Cm(1.25)
 

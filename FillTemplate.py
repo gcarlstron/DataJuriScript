@@ -46,7 +46,7 @@ def create_md_file(documento: str, dados: dict[str, Any]):
 
     # Generate filename with current date
     today = datetime.now().strftime('%Y-%m-%d-%H-%M')
-    filename = f'../documents/{process_id}_{today}.md'
+    filename = f'documents/{process_id}_{today}.md'
     with open(filename, 'w', encoding='utf-8') as file:
         file.write(content)
     print(f'Document saved as: {filename}')

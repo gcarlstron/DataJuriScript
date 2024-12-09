@@ -1,11 +1,9 @@
-import os
-
 import streamlit as st
 from dotenv import load_dotenv
+from datetime import datetime, timedelta, date
 from DataJuriAuthenticate import DataJuriAuthenticate
 from DataJuriClient import DataJuriClient
-from main import process_document
-from datetime import datetime, timedelta, date
+from ProcessDocument import process_document
 
 
 def load_processes(page: int, page_size: int, process_id: str = None,
