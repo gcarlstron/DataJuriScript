@@ -15,6 +15,7 @@ def process_document(process_id: str):
         # Inicializa o cliente
         authenticate = DataJuriAuthenticate(host)
         client = DataJuriClient(host, authenticate.get_token())
+        process_id = int(process_id)
 
         # Busca e preenche o template
         template_data = client.fill_template(str(process_id))
