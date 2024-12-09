@@ -10,7 +10,6 @@ def process_document(process_id: str):
     # Configurações
     host = "api.datajuri.com.br"
     template_folder = 'template'
-    documents_folder = 'documents'
 
     try:
         # Inicializa o cliente

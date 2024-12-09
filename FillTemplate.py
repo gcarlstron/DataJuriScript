@@ -49,6 +49,5 @@ def create_md_file(documento: str, dados: dict[str, Any]):
     filename = f'documents/{process_id}_{today}.md'
     with open(filename, 'w', encoding='utf-8') as file:
         file.write(content)
-    print(f'Document saved as: {filename}')
 
     return filename, data_table
