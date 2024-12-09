@@ -20,6 +20,7 @@ class DocumentStyles:
     italic_left_indent: float = Cm(0.5)
     header_image: str = "../img/logo.jpg"
     image_width: float = Cm(5)
+    first_line_indent: float = Cm(1.25)
 
 
 class GenerateDocx:
@@ -85,6 +86,9 @@ class GenerateDocx:
     def _process_paragraph_element(self, doc: Document, element: BeautifulSoup) -> None:
         paragraph = doc.add_paragraph()
         has_italic = False
+
+        if '[[ left ]]' not in element.text:
+            paragraph.paragraph_format.first_line_indent = self.styles.first_line_indent
 
         for child in element.children:
             if isinstance(child, str):
