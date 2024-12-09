@@ -37,15 +37,14 @@ class DataJuriClient:
             conn.close()
 
     def format_date(self, date_str: str) -> str:
-        locale.setlocale(locale.LC_TIME, 'pt_BR.UTF-8')
-
-        data = datetime.strptime(date_str, '%Y-%m-%d')
-
-        dia = data.strftime('%d')
-        mes = data.strftime('%B').lower()
-        ano = data.strftime('%Y')
-
-        return f"{dia} de {mes} de {ano}"
+        months = {
+            '01': 'janeiro', '02': 'fevereiro', '03': 'março',
+            '04': 'abril', '05': 'maio', '06': 'junho',
+            '07': 'julho', '08': 'agosto', '09': 'setembro',
+            '10': 'outubro', '11': 'novembro', '12': 'dezembro'
+        }
+        ano, mes, dia = date_str.split('-')
+        return f"{int(dia):02d} de {months[mes]} de {ano}"
 
     def get_process(self, process_id: str) -> Dict[str, Any]:
         """Busca dados do processo"""
@@ -123,7 +122,7 @@ class DataJuriClient:
                     "data_final": pedido.get('data_final_pedido', ''),
                     "empresa": pedido.get('empresa', ''),
                     "funcao": pedido.get('funcao', ''),
-                    "agentes_nocivos": [f"{i+1}. {agente}" for i, agente in
+                    "agentes_nocivos": [f"{i + 1}. {agente}" for i, agente in
                                         enumerate(pedido.get('agentes_nocivos', '').split('<br/>')) if agente.strip()],
                     "provas": [provas for provas in (pedido.get('provas', '').split('<br/>'))]
                 }
