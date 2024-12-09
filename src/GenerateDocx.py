@@ -34,14 +34,24 @@ class GenerateDocx:
             return
 
         section = doc.sections[0]
-
         header = section.header
-
         header_para = header.paragraphs[0] if header.paragraphs else header.add_paragraph()
         header_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
         run = header_para.add_run()
         run.add_picture(self.styles.header_image, width=self.styles.image_width)
+
+    def _apply_paragraph_spacing(self, paragraph, is_heading: bool = False) -> None:
+        paragraph_format = paragraph.paragraph_format
+        paragraph_format.line_spacing = 1.0
+        if is_heading:
+            # Espaço duplo antes dos títulos (24pt = 2 linhas)
+            paragraph_format.space_before = Pt(24)
+            paragraph_format.space_after = Pt(12)
+        else:
+            # Espaço simples para o resto do texto
+            paragraph_format.space_before = Pt(0)
+            paragraph_format.space_after = Pt(12)
 
     def _clean_html_tags(self, text: str) -> str:
         """Remove HTML tags from text while preserving content."""
@@ -59,16 +69,8 @@ class GenerateDocx:
                 continue
 
             para.text = para.text.replace('[[ tabela ]]', '')
-            table = doc.add_table(rows=1, cols=2)
+            table = doc.add_table(rows=0, cols=2)
             table.style = self.styles.table_style
-
-            headers = ['Campo', 'Valor']
-            for i, header in enumerate(headers):
-                cell = table.cell(0, i)
-                cell.text = header
-                for paragraph in cell.paragraphs:
-                    for run in paragraph.runs:
-                        self._apply_default_font_style(run)
 
             for i, (key, value) in enumerate(table_data.items(), start=1):
                 row = table.add_row()
@@ -105,6 +107,14 @@ class GenerateDocx:
         if has_italic:
             paragraph.paragraph_format.left_indent = self.styles.italic_left_indent
 
+        if '[[ left ]]' in paragraph.text:
+            paragraph.text = paragraph.text.replace('[[ left ]]', '')
+            paragraph.alignment =  WD_ALIGN_PARAGRAPH.LEFT
+        else:
+            paragraph.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+
+        self._apply_paragraph_spacing(paragraph, is_heading=False)
+
     def _format_heading(self, paragraph, text: str) -> None:
         run = paragraph.add_run(text.upper())
         run.font.name = self.styles.default_font
@@ -112,6 +122,7 @@ class GenerateDocx:
         run.font.color.rgb = self.styles.heading_color
         run.underline = True
         paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        self._apply_paragraph_spacing(paragraph, is_heading=True)
 
     def convert_markdown_to_docx(
             self,
@@ -131,11 +142,11 @@ class GenerateDocx:
         table_index = 0
 
         for element in soup.find_all(['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol']):
-            if element.name.startswith('h'):
+            if element.name.startswith('h') and element.name != 'h6':
                 p = doc.add_paragraph()
                 p.style = f'Heading {element.name[1]}'
                 self._format_heading(p, element.text)
-            elif element.name == 'p':
+            elif element.name == 'p' or element.name == "h6":
                 if '[[ tabela ]]' in element.text:
                     p = doc.add_paragraph(element.text)
                     for run in p.runs:

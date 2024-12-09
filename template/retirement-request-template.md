@@ -1,12 +1,11 @@
 # REQUERIMENTO ADMINISTRATIVO DE APOSENTADORIA
 
-Ao (À)
-
+[[ left ]]Ao (À)  
 Ilmo (a). Sr (a). Gerente Executivo (a)  
 Agência da Previdência Social  
-[localidade_fase_atual]
+[localidade_fase_atual]  
 
-**Requerente:** [cliente]  
+[[ left ]]**Requerente:** [cliente]  
 **CPF:** [CPF]  
 **PIS:** [PIS]  
 **Data de nascimento:** [data_nascimento]  
@@ -59,10 +58,10 @@ e) O pagamento dos valores em atraso, desde a data considerada como DIB, com jur
 
 f) Requer a juntada de documentos em cópias devidamente autenticadas nos termos do Artigo 677, inciso VII, §1º e §2º da Instrução Normativa 77/2015.
 
-**Nestes termos,**  
+[[ left ]]**Nestes termos,**  
 **pede deferimento.**
 
-**[localidade_fase_atual], [data_atual].**
+[[ left ]]**[localidade_fase_atual], [data_atual].**
 
-**[advogado_cliente]**  
+[[ left ]]**[advogado_cliente]**  
 **OAB/[oab_advogado_cliente]**
