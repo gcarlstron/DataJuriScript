@@ -75,7 +75,7 @@ class GenerateDocx:
 
             for i, (key, value) in enumerate(table_data.items(), start=1):
                 row = table.add_row()
-                row.cells[0].text = key
+                row.cells[0].text = key.capitalize().replace('_', ' ')
                 row.cells[1].text = self._clean_html_tags(value)
                 for cell in row.cells:
                     for paragraph in cell.paragraphs:
