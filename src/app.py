@@ -53,7 +53,7 @@ def main():
     # Pagination controls
     page_size = 10
     if 'page' not in st.session_state:
-        st.session_state.page = 0
+        st.session_state.page = 1
 
     # Load processes with filters
     response = load_processes(
@@ -102,10 +102,10 @@ def main():
             st.rerun()
 
     with col2:
-        st.write(f"Página {st.session_state.page + 1} de {total_pages}")
+        st.write(f"Página {st.session_state.page} de {total_pages}")
 
     with col3:
-        if st.button("Próximo →") and st.session_state.page < total_pages - 1:
+        if st.button("Próximo →") and st.session_state.page < total_pages:
             st.session_state.page += 1
             st.rerun()
 
