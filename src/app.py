@@ -1,3 +1,5 @@
+import os
+
 import streamlit as st
 from dotenv import load_dotenv
 from DataJuriAuthenticate import DataJuriAuthenticate
@@ -86,15 +88,26 @@ def main():
             options=range(len(process_options)),
             format_func=lambda x: process_options[x]["text"]
         )
-
         if st.button("Gerar Requerimento"):
             process_id = process_options[selected_process]["id"]
             result = process_document(process_id)
-            st.text(result)
-    else:
-        st.warning("Nenhum processo encontrado.")
 
-    # Pagination controls
+            # Se o documento foi gerado com sucesso
+            if not result.startswith("Erro"):
+                # Constrói o caminho do arquivo
+                docx_path = result
+
+                # Lê o arquivo
+                with open(docx_path, "rb") as file:
+                    btn = st.download_button(
+                        label="Baixar Requerimento",
+                        data=file,
+                        file_name=result,
+                        mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                    )
+            else:
+                st.error(result)
+
     col1, col2, col3 = st.columns([1, 2, 1])
     with col1:
         if st.button("← Anterior") and st.session_state.page > 0:

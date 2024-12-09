@@ -133,7 +133,7 @@ class GenerateDocx:
             markdown_file: str,
             output_file: str,
             table_data: List[Dict[str, str]]
-    ) -> None:
+    ) -> str:
         with open(markdown_file, 'r', encoding='utf-8') as file:
             content = file.read()
 
@@ -167,3 +167,4 @@ class GenerateDocx:
                         self._apply_default_font_style(run)
 
         doc.save(output_file)
+        return output_file
